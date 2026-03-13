@@ -3,33 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Privatna ordinacija West - Dr Tamara Vesović. Stomatološke i estetske usluge u Beogradu. Zakazivanje pregleda i tretmana.">
-    <meta name="keywords" content="stomatolog, estetska medicina, dentista, zubar, privatna ordinacija, Dr Tamara Vesović, West">
-    <meta name="author" content="Ordinacija West">
+    <meta name="description" content="Ordinacija West - Dr Tamara Vesović | Vrhunska stomatološka i estetska ordinacija u Požegi. Moderna oprema, personalizovan pristup. Botoks, fileri, implantologija. Zakažite pregled!">
+    <meta name="keywords" content="stomatolog Požega, zubna ordinacija, estetska medicina, Dr Tamara Vesović, implantologija, botoks tretmani, dermal fileri, ordinacija west">
+    <meta name="author" content="Dr Tamara Vesović - Ordinacija West">
     <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#2c5aa0">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="Privatna ordinacija West - Dr Tamara Vesović">
-    <meta property="og:description" content="Stomatološke i estetske usluge u Beogradu. Moderna oprema, profesionalan pristup.">
+    <meta property="og:title" content="Ordinacija West - Dr Tamara Vesović | Požega">
+    <meta property="og:description" content="Moderna stomatološka i estetska ordinacija u Požegi. Vrhunski tretmani, iskusno osoblje, najnovija oprema.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
+    <meta property="og:url" content="https://ordinacija-west.rs">
+    <meta property="og:image" content="https://ordinacija-west.rs/assets/images/og-image.jpg">
+    <meta property="og:locale" content="sr_RS">
     
-    <title>Privatna ordinacija West - Dr Tamara Vesović | Stomatologija & Estetska medicina</title>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ordinacija West - Stomatologija & Estetska medicina">
+    <meta name="twitter:description" content="Moderna ordinacija u Požegi. Dr Tamara Vesović i tim stručnjaka.">
+    
+    <title>Ordinacija West - Dr Tamara Vesović | Stomatologija & Estetska medicina Požega</title>
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    <link rel="preload" href="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" as="image">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" defer>
     
-    <!-- CSS -->
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "DentalClinic",
+        "name": "Ordinacija West",
+        "description": "Moderna stomatološka i estetska ordinacija u Požegi",
+        "url": "https://ordinacija-west.rs",
+        "telephone": "+38164345678",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Vojvode Mišića 50",
+            "addressLocality": "Požega",
+            "postalCode": "31000",
+            "addressCountry": "RS"
+        },
+        "openingHours": [
+            "Mo-Fr 08:00-20:00",
+            "Sa 08:00-14:00"
+        ],
+        "priceRange": "$$",
+        "medicalSpecialty": ["Dentistry", "Cosmetic Dentistry", "Aesthetic Medicine"],
+        "physician": {
+            "@type": "Person",
+            "name": "Dr Tamara Vesović",
+            "jobTitle": "Stomatolog i specijalist estetske medicine"
+        }
+    }
+    </script>
+    
 </head>
 <body>
     <!-- Header -->
@@ -39,8 +83,8 @@
                 <!-- Logo -->
                 <div class="nav-logo">
                     <a href="#home" aria-label="Početna strana">
-                        <img src="assets/images/logo-placeholder.png" alt="Ordinacija West Logo" class="logo-img">
-                        <span class="logo-text">Ordinacija <strong>West</strong></span>
+                        <img src="assets/images/logowest.png" alt="Ordinacija West Logo" class="logo-img">
+                        
                     </a>
                 </div>
                 
@@ -52,37 +96,19 @@
                     <li class="nav-item">
                         <a href="#about" class="nav-link" data-section="about">O nama</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a href="#services" class="nav-link dropdown-toggle" data-section="services">
-                            Usluge <i class="fas fa-chevron-down"></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#services" class="dropdown-link" data-section="services">Sve usluge</a></li>
-                            <li><a href="#services" class="dropdown-link" data-service="stomatology">Stomatologija</a></li>
-                            <li><a href="#services" class="dropdown-link" data-service="aesthetic">Estetska medicina</a></li>
-                            <li><a href="#pricing" class="dropdown-link" data-section="pricing">Cenovnik</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link" data-section="services">Usluge</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a href="#gallery" class="nav-link dropdown-toggle">
-                            Galerija <i class="fas fa-chevron-down"></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#gallery" class="dropdown-link" data-section="gallery">Radovi</a></li>
-                            <li><a href="#before-after" class="dropdown-link" data-section="before-after">Pre i Posle</a></li>
-                            <li><a href="#reviews" class="dropdown-link" data-section="reviews">Recenzije</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a href="#pricing" class="nav-link" data-section="pricing">Cenovnik</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a href="#contact" class="nav-link dropdown-toggle">
-                            Info <i class="fas fa-chevron-down"></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#faq" class="dropdown-link" data-section="faq">Česta pitanja</a></li>
-                            <li><a href="#location" class="dropdown-link" data-section="location">Lokacija</a></li>
-                            <li><a href="#contact" class="dropdown-link" data-section="contact">Kontakt</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a href="#gallery" class="nav-link" data-section="gallery">Galerija</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="#faq" class="nav-link" data-section="faq">Česta pitanja</a>
+                    </li>
+        
                     <li class="nav-item">
                         <a href="#contact" class="nav-link cta-nav" data-section="contact">
                             <i class="fas fa-calendar-alt"></i>
@@ -104,39 +130,34 @@
     <main>
         <!-- Hero Section -->
         <section class="hero" id="home">
-            <!-- Background Video -->
-            <div class="hero-video">
-                <video autoplay muted loop playsinline class="hero-video-bg">
-                    <source src="assets/videos/hero-video.mp4" type="video/mp4">
-                    <source src="assets/videos/hero-video.webm" type="video/webm">
-                    <!-- Fallback image for browsers that don't support video -->
-                    <img src="assets/images/hero-placeholder.jpg" alt="Moderna stomatološka ordinacija">
-                </video>
-                <div class="hero-video-overlay"></div>
+            <!-- Background Image -->
+            <div class="hero-background">
+                <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Moderna stomatološka ordinacija West u Požegi - Dr Tamara Vesović" class="hero-bg-img" loading="eager">
+                <div class="hero-overlay"></div>
             </div>
             
             <div class="hero-container">
                 <div class="hero-content">
                     <h1 class="hero-title fade-in">
-                        Privatna ordinacija <span class="highlight">West</span>
+                        <span class="hero-highlight">Ordinacija West</span>
+                        <br>Vaš osmeh je naš prioritet
                     </h1>
                     <p class="hero-subtitle fade-in">
-                        Stomatološke i estetske usluge na najvišem nivou. 
-                        Dr Tamara Vesović i njen tim pružaju personalizovan pristup svakom pacijentu.
+                        <strong>15+ godina iskustva</strong> u stomatologiji i estetskoj stomatologiji. 
+                        Dr Tamara Vesović i njen tim nude kompletnu negu za vaš savršen osmeh.
                     </p>
                     <div class="hero-buttons fade-in">
-                        <a href="#contact" class="btn btn-primary" data-section="contact">
-                            <i class="fas fa-calendar-alt"></i>
+                        <a href="#contact" class="btn btn-primary btn-large" data-section="contact">
+                            <i class="fas fa-calendar-plus"></i>
                             Zakaži pregled
                         </a>
-                        <a href="#services" class="btn btn-secondary" data-section="services">
-                            <i class="fas fa-heart-pulse"></i>
+                        <a href="#services" class="btn btn-secondary btn-large" data-section="services">
+                            <i class="fas fa-gem"></i>
                             Naše usluge
                         </a>
-                        <a href="#about" class="btn btn-tertiary" data-section="about">
-                            <i class="fas fa-info-circle"></i>
-                            Saznaj više
-                        </a>
+                    </div>
+                    
+                </div>
                     </div>
                 </div>
             </div>
@@ -160,29 +181,31 @@
                 
                 <div class="about-content">
                     <div class="about-text fade-in">
-                        <h3>Dr Tamara Vesović</h3>
+                        <h3>Dr Tamara Vesović - Vaš pouzdani partner za zdravlje i lepotu</h3>
                         <p class="about-description">
-                            Privatna ordinacija West predstavlja spoj moderne stomatologije i estetske medicine, 
-                            gde se kombinuje višegodišnje iskustvo sa najnovijim tehnologijama u oblasti zdravstvene zaštite.
+                            Sa preko <strong>15 godina iskustva</strong> u stomatologiji i estetskoj medicini, 
+                            dr Tamara Vesović i njen tim pružaju vrhunske usluge koje kombinuju medicinski pristup 
+                            sa estetskim rezultatima koji prevazilaze očekivanja.
                         </p>
                         <p class="about-description">
-                            Dr Tamara Vesović, sa svojim timom stručnjaka, pruža personalizovan pristup svakom pacijentu, 
-                            omogućavajući im da ostvare optimalno oralno zdravlje i željenu estetiku.
+                            U ordinaciji West verujemo da svaki pacijent zaslužuje individualan pristup. 
+                            Koristimo najnovije tehnologije i materijale svetskih brendova, garantujući 
+                            <strong>sigurnost, kvalitet i dugotrajne rezultate</strong>.
                         </p>
                         
                         <div class="about-features">
                             <div class="feature">
                                 <i class="fas fa-award"></i>
                                 <div>
-                                    <h4>Iskustvo</h4>
-                                    <p>Višegodišnje iskustvo u stomatologiji i estetskoj medicini</p>
+                                    <h4>15+ godina iskustva</h4>
+                                    <p>Specijalizacija iz stomatologije i estetske medicine</p>
                                 </div>
                             </div>
                             <div class="feature">
                                 <i class="fas fa-microscope"></i>
                                 <div>
-                                    <h4>Moderna oprema</h4>
-                                    <p>Najsavremenija tehnologija za precizne tretmane</p>
+                                    <h4>Najnovija oprema</h4>
+                                    <p>3D skener, digitalna radiografija, švajcarski implanti</p>
                                 </div>
                             </div>
                             <div class="feature">
@@ -220,37 +243,53 @@
                         </div>
                         <h3 class="service-title">Stomatologija</h3>
                         <p class="service-description">
-                            Kompletna stomatološka nega uključujući preventivne, kurativne i hirurške tretmane.
+                            <strong>Kompletna stomatološka nega</strong> - od preventive do složenih rekonstrukcija. 
+                            Koristimo bezbolne tehnike i najkvalitetnije materijale.
                         </p>
                         <ul class="service-list">
-                            <li><i class="fas fa-check"></i> Opšta stomatologija</li>
-                            <li><i class="fas fa-check"></i> Protetika</li>
-                            <li><i class="fas fa-check"></i> Parodontologija</li>
-                            <li><i class="fas fa-check"></i> Endodoncija</li>
-                            <li><i class="fas fa-check"></i> Oralna hirurgija</li>
-                            <li><i class="fas fa-check"></i> Implantologija</li>
+                            <li><i class="fas fa-check"></i> Preventivni pregledi i čišćenje</li>
+                            <li><i class="fas fa-check"></i> Keramičke krunice i mostovi</li>
+                            <li><i class="fas fa-check"></i> Lečenje desni (parodontologija)</li>
+                            <li><i class="fas fa-check"></i> Bezbolno lečenje kanala</li>
+                            <li><i class="fas fa-check"></i> Hirurške intervencije</li>
+                            <li><i class="fas fa-check"></i> Švajcarski implanti (Straumann)</li>
                         </ul>
-                        <a href="#contact" class="service-btn" data-section="contact">Zakaži pregled</a>
+                        <div class="service-price">
+                            <span class="price-from">Pregledi od</span>
+                            <span class="price-amount">1.500 RSD</span>
+                        </div>
+                        <a href="#contact" class="service-btn btn-primary" data-section="contact">
+                            <i class="fas fa-calendar-alt"></i>
+                            Zakaži pregled
+                        </a>
                     </div>
                     
                     <!-- Estetska medicina -->
                     <div class="service-card fade-in">
                         <div class="service-icon">
-                            <i class="fas fa-spa"></i>
+                            <i class="fas fa-gem"></i>
                         </div>
-                        <h3 class="service-title">Estetska medicina</h3>
+                        <h3 class="service-title">Estetska Stomatologija</h3>
                         <p class="service-description">
-                            Neinvazivni estetski tretmani za podmlađivanje i poboljšanje prirodne lepote.
+                            <strong>Osmeh koji zavoljevate</strong> - estetski tretmani koji spajaju prirodan izgled 
+                            sa najsavremenijim tehnikama za savršen rezultat.
                         </p>
                         <ul class="service-list">
-                            <li><i class="fas fa-check"></i> Botoks tretmani</li>
-                            <li><i class="fas fa-check"></i> Dermal fileri</li>
-                            <li><i class="fas fa-check"></i> Tretmani usana</li>
-                            <li><i class="fas fa-check"></i> Mezoterapija</li>
-                            <li><i class="fas fa-check"></i> PRP tretman</li>
-                            <li><i class="fas fa-check"></i> Hemijski pilozi</li>
+                            <li><i class="fas fa-check"></i> Keramičke fasete (veneers)</li>
+                            <li><i class="fas fa-check"></i> Kompozitno modeliranje zuba</li>
+                            <li><i class="fas fa-check"></i> Profesionalno beljenje zuba</li>
+                            <li><i class="fas fa-check"></i> Invisalign transparentne proteze</li>
+                            <li><i class="fas fa-check"></i> "Hollywood smile" tretman</li>
+                            <li><i class="fas fa-check"></i> Gingivalno modeliranje</li>
                         </ul>
-                        <a href="#contact" class="service-btn" data-section="contact">Zakaži tretman</a>
+                        <div class="service-price">
+                            <span class="price-from">Beljenje od</span>
+                            <span class="price-amount">12.000 RSD</span>
+                        </div>
+                        <a href="#contact" class="service-btn btn-secondary" data-section="contact">
+                            <i class="fas fa-sparkles"></i>
+                            Konsultacija
+                        </a>
                     </div>
                 </div>
             </div>
@@ -496,7 +535,7 @@
                 
                 <div class="pricing-tabs fade-in">
                     <button class="pricing-tab active" data-tab="stomatology">Stomatologija</button>
-                    <button class="pricing-tab" data-tab="aesthetic">Estetska medicina</button>
+                    <button class="pricing-tab" data-tab="aesthetic">Estetska stomatologija</button>
                 </div>
                 
                 <!-- Stomatološki cenovnik -->
@@ -650,82 +689,44 @@
                     </div>
                 </div>
                 
-                <!-- Estetska medicina cenovnik -->
+                <!-- Estetska stomatologija cenovnik -->
                 <div class="pricing-content" id="aesthetic-pricing">
                     <div class="pricing-grid">
                         <div class="pricing-category fade-in">
-                            <h3><i class="fas fa-syringe"></i> Botoks tretmani</h3>
+                            <h3><i class="fas fa-gem"></i> Estetska stomatologija</h3>
                             <div class="pricing-items">
                                 <div class="pricing-item">
-                                    <span class="service-name">Čelo (frontalis)</span>
-                                    <span class="service-price">20.000 RSD</span>
-                                </div>
-                                <div class="pricing-item">
-                                    <span class="service-name">Oko očiju (crow's feet)</span>
-                                    <span class="service-price">18.000 RSD</span>
-                                </div>
-                                <div class="pricing-item">
-                                    <span class="service-name">Između obrva (glabela)</span>
-                                    <span class="service-price">15.000 RSD</span>
-                                </div>
-                                <div class="pricing-item">
-                                    <span class="service-name">Tretman znojenja</span>
-                                    <span class="service-price">35.000 RSD</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="pricing-category fade-in">
-                            <h3><i class="fas fa-lips"></i> Dermal fileri</h3>
-                            <div class="pricing-items">
-                                <div class="pricing-item">
-                                    <span class="service-name">Usne (0.5ml)</span>
-                                    <span class="service-price">25.000 RSD</span>
-                                </div>
-                                <div class="pricing-item">
-                                    <span class="service-name">Usne (1ml)</span>
-                                    <span class="service-price">40.000 RSD</span>
-                                </div>
-                                <div class="pricing-item">
-                                    <span class="service-name">Nasolabijalne bore</span>
-                                    <span class="service-price">30.000 RSD</span>
-                                </div>
-                                <div class="pricing-item">
-                                    <span class="service-name">Jagodice</span>
+                                    <span class="service-name">Keramičke fasete (veneers) - po zubu</span>
                                     <span class="service-price">35.000 RSD</span>
                                 </div>
                                 <div class="pricing-item">
-                                    <span class="service-name">Contouring lica</span>
-                                    <span class="service-price">45.000 RSD</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="pricing-category fade-in">
-                            <h3><i class="fas fa-spa"></i> Ostali tretmani</h3>
-                            <div class="pricing-items">
-                                <div class="pricing-item">
-                                    <span class="service-name">Mezoterapija lica</span>
-                                    <span class="service-price">15.000 RSD</span>
-                                </div>
-                                <div class="pricing-item">
-                                    <span class="service-name">PRP tretman</span>
-                                    <span class="service-price">20.000 RSD</span>
-                                </div>
-                                <div class="pricing-item">
-                                    <span class="service-name">Hemijski piling</span>
+                                    <span class="service-name">Profesionalno beljenje zuba (kućno)</span>
                                     <span class="service-price">12.000 RSD</span>
                                 </div>
                                 <div class="pricing-item">
-                                    <span class="service-name">Konsultacija</span>
-                                    <span class="service-price">3.000 RSD</span>
+                                    <span class="service-name">Zoom beljenje (u ordinaciji)</span>
+                                    <span class="service-price">25.000 RSD</span>
+                                </div>
+                                <div class="pricing-item">
+                                    <span class="service-name">Kompozitno modeliranje - po zubu</span>
+                                    <span class="service-price">8.000 RSD</span>
+                                </div>
+                                <div class="pricing-item">
+                                    <span class="service-name">Hollywood smile paket (8 zuba)</span>
+                                    <span class="service-price">280.000 RSD</span>
+                                </div>
+                                <div class="pricing-item">
+                                    <span class="service-name">Invisalign tretman</span>
+                                    <span class="service-price">450.000 RSD</span>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                    </div>
                     
                     <div class="pricing-note fade-in">
-                        <p><i class="fas fa-info-circle"></i> Cenovnik za tretmane hijaluronskim filerima za usne i druge estetske tretmane biće dostupan uskoro.</p>
+                        <p><i class="fas fa-info-circle"></i> Za dodatne informacije o tretmanima i cenama, kontaktirajte nas.</p>
                     </div>
                 </div>
                 
@@ -887,15 +888,6 @@
                         </div>
                     </div>
                 </div>
-                
-                <div class="reviews-cta fade-in">
-                    <h3>Podelite svoje iskustvo</h3>
-                    <p>Vaše mišljenje je važno za nas i buduće pacijente</p>
-                    <a href="#contact" class="btn btn-primary" data-section="contact">
-                        <i class="fas fa-star"></i>
-                        Ostavite recenziju
-                    </a>
-                </div>
             </div>
         </section>
 
@@ -932,21 +924,21 @@
                     
                     <div class="faq-item fade-in">
                         <div class="faq-question">
-                            <h4>Koliko traje tretman botoksom?</h4>
+                            <h4>Koliko traje beljenje zuba?</h4>
                             <i class="fas fa-chevron-down"></i>
                         </div>
                         <div class="faq-answer">
-                            <p>Tretman botoksom obično traje 15-30 minuta, u zavisnosti od oblasti koje se tretiraju. Efekti su vidljivi nakon 3-7 dana i traju 3-6 meseci. Pre tretmana se obavlja detaljna konsultacija gde se određuje plan tretmana prilagođen vašim potrebama.</p>
+                            <p>Profesionalno beljenje u ordinaciji (Zoom) traje oko 60-90 minuta i rezultati su vidljivi odmah. Kućno beljenje sa individualno napravljenim folijom traje 7-14 dana sa nošenjem 2-4 sata dnevno. Oba tretmana mogu da posvetle zube za 3-8 nijansi.</p>
                         </div>
                     </div>
                     
                     <div class="faq-item fade-in">
                         <div class="faq-question">
-                            <h4>Da li su tretmani bolni?</h4>
+                            <h4>Da li su stomatološki tretmani bolni?</h4>
                             <i class="fas fa-chevron-down"></i>
                         </div>
                         <div class="faq-answer">
-                            <p>Koristimo najmoderniju opremu i tehnike koje minimizuju nelagodnost. Za stomatološke tretmane primenjujemo lokalne anestezije, a za estetske tretmane koristimo fine igle i hladnu terapiju. Naš cilj je da se osećate udobno tokom celog tretmana.</p>
+                            <p>Koristimo napredne tehnike za potpuno bezbolno lečenje. Aplikujemo topikalni anestetik pre ubrizgavanja, koristimo tanke igle i lagano zagravanje anestetika. Za anksiozne pacijente nudimo i sedaciju azot-oksidom. Većina tretmana se izvodi potpuno bez bola.</p>
                         </div>
                     </div>
                     
@@ -962,21 +954,21 @@
                     
                     <div class="faq-item fade-in">
                         <div class="faq-question">
-                            <h4>Koje su preporuke nakon estetskih tretmana?</h4>
+                            <h4>Koliko traju rezultati keramičkih faseta?</h4>
                             <i class="fas fa-chevron-down"></i>
                         </div>
                         <div class="faq-answer">
-                            <p>Nakon estetskih tretmana preporučujemo izbegavanje intenzivne fizičke aktivnosti 24h, ne masirati tretirane oblasti, izbegavati izlaganje suncu i saunu 2 nedelje. Detaljan list instrukcija dobićete nakon tretmana, kao i naš kontakt za bilo koja pitanja.</p>
+                            <p>Keramičke fasete mogu trajati 10-20 godina uz pravilnu negu. Važno je održavati dobru oralnu higijenu, izbegavati škrgutat zubima i redovno ići na kontrole. Pružamo garanciju na naš rad i uputstva za održavanje faseta.</p>
                         </div>
                     </div>
                     
                     <div class="faq-item fade-in">
                         <div class="faq-question">
-                            <h4>Da li nudite konsultacije online?</h4>
+                            <h4>Da li nudite konsultacije za estetsku stomatologiju?</h4>
                             <i class="fas fa-chevron-down"></i>
                         </div>
                         <div class="faq-answer">
-                            <p>Trenutno nudimo inicijalne konsultacije putem video poziva za estetske tretmane. Međutim, za stomatološke preglede i finalne planove tretmana potreban je fizički dolazak u ordinaciju. Online konsultacije možete zakazati kontaktiranjem naše ordinacije.</p>
+                            <p>Da, nudimo detaljne konsultacije za sve estetske tretmane. Tokom konsultacije analiziramo stanje zuba, objašnjavamo opcije tretmana, pravimp plan terapije i dajemo preciznu procenu troškova. Prva konsultacija je besplatna za estetske tretmane.</p>
                         </div>
                     </div>
                     
@@ -1023,7 +1015,6 @@
                                 <a href="https://maps.app.goo.gl/nGB8mcLAow131Ezs7" 
                                    target="_blank" 
                                    class="address-link">
-                                    <i class="fas fa-external-link-alt"></i>
                                     Otvori u Google Maps
                                 </a>
                             </div>
@@ -1070,7 +1061,6 @@
                             </iframe>
                             <div class="map-overlay">
                                 <a href="https://maps.app.goo.gl/nGB8mcLAow131Ezs7" target="_blank" class="map-link">
-                                    <i class="fas fa-external-link-alt"></i>
                                     Otvori u Google Maps
                                 </a>
                             </div>
@@ -1092,32 +1082,23 @@
                 
                 <div class="contact-content">
                     <div class="contact-info fade-in">
-                        <h3>Kontaktirajte nas</h3>
-                        <p>Dostupni smo za sva vaša pitanja i zakazivanje termina.</p>
-                        
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
                             <div>
-                                <h4>Telefon</h4>
-                                <p><a href="tel:+381643456789">+381 64 345 6789</a></p>
-                                <p><a href="tel:+381691234567">+381 69 123 4567</a></p>
+                                <h4>Telefon za zakazivanje</h4>
+                                <a href="tel:+381643456789" class="contact-phone">+381 64 345 6789</a>
                             </div>
                         </div>
                         
                         <div class="contact-item">
                             <i class="fab fa-whatsapp"></i>
                             <div>
-                                <h4>WhatsApp</h4>
-                                <div class="whatsapp-buttons">
-                                    <a href="https://wa.me/381643456789?text=Pozdrav,%20zanima%20me%20vaša%20usluga.%20Kada%20mogu%20da%20dođem%20na%20termin?" 
-                                       target="_blank" class="whatsapp-btn">
-                                        <i class="fab fa-whatsapp"></i> +381 64 345 6789
-                                    </a>
-                                    <a href="https://wa.me/381691234567?text=Pozdrav,%20zanima%20me%20vaša%20usluga.%20Kada%20mogu%20da%20dođem%20na%20termin?" 
-                                       target="_blank" class="whatsapp-btn">
-                                        <i class="fab fa-whatsapp"></i> +381 69 123 4567
-                                    </a>
-                                </div>
+                                <h4>WhatsApp poruke</h4>
+                                <a href="https://wa.me/381643456789?text=Pozdrav!%20%C5%BDelim%20da%20zaka%C5%BEem%20pregled%20u%20Ordinaciji%20West.%20Kada%20imate%20slobodan%20termin%3F" 
+                                   target="_blank" class="contact-whatsapp">
+                                    <i class="fab fa-whatsapp"></i>
+                                    Pošaljite poruku
+                                </a>
                             </div>
                         </div>
                         
@@ -1125,100 +1106,33 @@
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <h4>Email</h4>
-                                <p><a href="mailto:info@ordinacija-west.rs">info@ordinacija-west.rs</a></p>
+                                <a href="mailto:info@ordinacija-west.rs" class="contact-email">info@ordinacija-west.rs</a>
                             </div>
                         </div>
                         
                         <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
+                            <i class="fas fa-clock"></i>
                             <div>
-                                <h4>Adresa</h4>
-                                <p>Vojvode Mišića 50</p>
-                                <p>31000 Požega, Srbija</p>
-                                <a href="https://maps.app.goo.gl/nGB8mcLAow131Ezs7" 
-                                   target="_blank" 
-                                   class="address-link">
-                                    <i class="fas fa-route"></i>
-                                    Navigacija do ordinacije
-                                </a>
+                                <h4>Radno vreme</h4>
+                                <p>Ponedeljak - Petak: 08:00 - 20:00</p>
+                                <p>Subota: 08:00 - 14:00</p>
+                                <p>Nedelja: Zatvoreno</p>
                             </div>
                         </div>
                         
-                        <div class="social-links">
-                            <h4>Pratite nas</h4>
-                            <div class="social-icons">
-                                <a href="#" class="social-link" aria-label="Facebook">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="#" class="social-link" aria-label="Instagram">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="#" class="social-link" aria-label="LinkedIn">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
+                        <div class="contact-item emergency-contact">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <div>
+                                <h4>Hitni slučajevi</h4>
+                                <p>Van radnog vremena:</p>
+                                <a href="tel:+381691234567" class="emergency-phone">+381 69 123 4567</a>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="contact-form fade-in">
-                        <form id="contact-form" class="form" novalidate>
-                            <div class="form-group">
-                                <label for="name" class="form-label">Ime i prezime *</label>
-                                <input type="text" id="name" name="name" class="form-input" required aria-describedby="name-error">
-                                <span class="form-error" id="name-error"></span>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="phone" class="form-label">Telefon *</label>
-                                <input type="tel" id="phone" name="phone" class="form-input" required aria-describedby="phone-error">
-                                <span class="form-error" id="phone-error"></span>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" id="email" name="email" class="form-input" aria-describedby="email-error">
-                                <span class="form-error" id="email-error"></span>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="service" class="form-label">Tip usluge</label>
-                                <select id="service" name="service" class="form-input">
-                                    <option value="">Izaberite uslugu</option>
-                                    <option value="stomatology">Stomatologija</option>
-                                    <option value="aesthetic">Estetska medicina</option>
-                                    <option value="consultation">Konsultacija</option>
-                                </select>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="message" class="form-label">Poruka *</label>
-                                <textarea id="message" name="message" class="form-textarea" rows="5" required aria-describedby="message-error" placeholder="Opišite razlog dolaska ili postavite pitanje..."></textarea>
-                                <span class="form-error" id="message-error"></span>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label class="checkbox-label">
-                                    <input type="checkbox" id="privacy" name="privacy" required>
-                                    <span class="checkbox-mark"></span>
-                                    Slažem se sa <a href="#" target="_blank">politikom privatnosti</a> *
-                                </label>
-                                <span class="form-error" id="privacy-error"></span>
-                            </div>
-                            
-                            <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
-                                <span class="btn-text">Pošalji poruku</span>
-                                <span class="btn-loader" style="display: none;">
-                                    <i class="fas fa-spinner fa-spin"></i>
-                                </span>
-                            </button>
-                        </form>
-                        
-                        <div class="form-success" id="form-success" style="display: none;">
-                            <i class="fas fa-check-circle"></i>
-                            <h4>Poruka je uspešno poslata!</h4>
-                            <p>Kontaktiraćemo vas u najkraćem roku.</p>
-                        </div>
-                    </div>
+                    <div class="contact-form-container fade-in">
+                        <h3>Kontakt forma</h3>
+                        <p>Popunite formu i javićemo vam se u najkraćem roku:</p>
                 </div>
             </div>
         </section>
@@ -1230,13 +1144,23 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <img src="logo-placeholder.png" alt="Ordinacija West Logo" class="logo-img">
                         <span class="logo-text">Ordinacija <strong>West</strong></span>
                     </div>
                     <p class="footer-description">
-                        Privatna ordinacija West pruža stomatološke i estetske usluge 
-                        na najvišem nivou, kombinujući iskustvo sa najnovijim tehnologijama.
+                        Moderna stomatološka ordinacija u Požegi. Dr Tamara Vesović i njen tim 
+                        pružaju kompletnu stomatološku negu sa 15+ godina iskustva.
                     </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
                 </div>
                 
                 <div class="footer-section">
@@ -1245,8 +1169,8 @@
                         <li><a href="#services">Opšta stomatologija</a></li>
                         <li><a href="#services">Estetska stomatologija</a></li>
                         <li><a href="#services">Implantologija</a></li>
-                        <li><a href="#services">Estetska medicina</a></li>
-                        <li><a href="#services">Botoks i fileri</a></li>
+                        <li><a href="#services">Ortodoncija</a></li>
+                        <li><a href="#services">Beljenje zuba</a></li>
                     </ul>
                 </div>
                 
@@ -1255,7 +1179,7 @@
                     <ul class="footer-contact">
                         <li>
                             <i class="fas fa-phone"></i>
-                            <a href="tel:+381111234567">+381 11 123 4567</a>
+                            <a href="tel:+381643456789">+381 64 345 6789</a>
                         </li>
                         <li>
                             <i class="fas fa-envelope"></i>
@@ -1263,7 +1187,11 @@
                         </li>
                         <li>
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>[Adresa će biti unesena]</span>
+                            <span>Vojvode Mišića 50, 31000 Požega</span>
+                        </li>
+                        <li>
+                            <i class="fab fa-whatsapp"></i>
+                            <a href="https://wa.me/381643456789">WhatsApp poruke</a>
                         </li>
                     </ul>
                 </div>
@@ -1271,32 +1199,23 @@
                 <div class="footer-section">
                     <h4 class="footer-title">Radno vreme</h4>
                     <ul class="footer-schedule">
-                        <li>Pon - Pet: 08:00 - 20:00</li>
-                        <li>Subota: 08:00 - 14:00</li>
-                        <li>Nedelja: Zatvoreno</li>
+                        <li><strong>Pon - Pet:</strong> 08:00 - 20:00</li>
+                        <li><strong>Subota:</strong> 08:00 - 14:00</li>
+                        <li><strong>Nedelja:</strong> Zatvoreno</li>
+                        <li class="emergency-note">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            Hitno: +381 69 123 4567
+                        </li>
                     </ul>
-                    
-                    <div class="footer-social">
-                        <a href="#" class="social-link" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </div>
                 </div>
             </div>
             
             <div class="footer-bottom">
                 <div class="footer-copyright">
-                    <p>&copy; 2026 Ordinacija West. Sva prava zadržana.</p>
+                    <p>&copy; 2026 Ordinacija West - Dr Tamara Vesović | Sva prava zadržana</p>
                 </div>
-                <div class="footer-legal">
-                    <a href="#" target="_blank">Uslovi korišćenja</a>
-                    <a href="#" target="_blank">Politika privatnosti</a>
+                <div class="footer-credentials">
+                    <span>Licenciran rad | Registrovana ordinacija</span>
                 </div>
             </div>
         </div>

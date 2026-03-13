@@ -5,51 +5,103 @@
 
 'use strict';
 
+// Global error handling
+window.addEventListener('error', function(e) {
+    console.error('JavaScript error:', e.error);
+    // You can add error reporting here
+});
+
+window.addEventListener('unhandledrejection', function(e) {
+    console.error('Unhandled promise rejection:', e.reason);
+    e.preventDefault();
+});
+
 // DOM Content Loaded Event
 document.addEventListener('DOMContentLoaded', function() {
-    initializeWebsite();
+    try {
+        initializeWebsite();
+    } catch (error) {
+        console.error('Error initializing website:', error);
+    }
 });
 
 /**
- * Initialize all website functionality
+ * Initialize all website functionality with error handling
  */
 function initializeWebsite() {
-    // Navigation
-    initializeNavigation();
-    initializeSmoothScrolling();
-    initializeScrollSpy();
+    const initFunctions = [
+        // Navigation
+        { fn: initializeNavigation, name: 'Navigation' },
+        { fn: initializeSmoothScrolling, name: 'Smooth Scrolling' },
+        { fn: initializeScrollSpy, name: 'Scroll Spy' },
+        
+        // Hero (now for images instead of video)
+        { fn: initializeHeroImage, name: 'Hero Image' },
+        
+        // Animations
+        { fn: initializeScrollAnimations, name: 'Scroll Animations' },
+        { fn: initializeLazyLoading, name: 'Lazy Loading' },
+        
+        // Gallery
+        { fn: initializeGallery, name: 'Gallery' },
+        
+        // Before & After Sliders
+        { fn: initializeBeforeAfterSliders, name: 'Before/After Sliders' },
+        
+        // FAQ
+        { fn: initializeFAQ, name: 'FAQ' },
+        
+        // Contact Form
+        { fn: initializeContactForm, name: 'Contact Form' },
+        { fn: enhanceContactForm, name: 'Contact Form Enhancement' },
+        
+        // Back to Top
+        { fn: initializeBackToTop, name: 'Back to Top' },
+        
+        // Pricing tabs
+        { fn: initializePricingTabs, name: 'Pricing Tabs' },
+        
+        // Mobile optimizations
+        { fn: initializeMobileOptimizations, name: 'Mobile Optimizations' },
+        
+        // Performance optimizations
+        { fn: initializePerformanceOptimizations, name: 'Performance' },
+        
+        // Analytics
+        { fn: initializeAnalytics, name: 'Analytics' }
+    ];
+
+    initFunctions.forEach(({ fn, name }) => {
+        try {
+            fn();
+        } catch (error) {
+            console.error(`Error initializing ${name}:`, error);
+        }
+    });
+}
+
+/**
+ * Hero image functionality (replacing video)
+ */
+function initializeHeroImage() {
+    const heroImg = document.querySelector('.hero-bg-img');
     
-    // Hero
-    initializeHeroVideo();
+    if (!heroImg) return;
     
-    // Animations
-    initializeScrollAnimations();
-    initializeLazyLoading();
+    // Optimize image loading
+    if ('loading' in HTMLImageElement.prototype) {
+        heroImg.loading = 'eager'; // Hero image should load immediately
+    }
     
-    // Gallery
-    initializeGallery();
+    // Handle image load events
+    heroImg.addEventListener('load', function() {
+        this.style.opacity = '1';
+    });
     
-    // Before & After Sliders
-    initializeBeforeAfterSliders();
-    
-    // FAQ
-    initializeFAQ();
-    
-    // Contact Form
-    initializeContactForm();
-    enhanceContactForm();
-    
-    // Back to Top
-    initializeBackToTop();
-    
-    // Pricing tabs
-    initializePricingTabs();
-    
-    // Mobile optimizations
-    initializeMobileOptimizations();
-    
-    // Performance optimizations
-    initializePerformanceOptimizations();
+    heroImg.addEventListener('error', function() {
+        console.warn('Hero image failed to load');
+        // You can add fallback logic here
+    });
 }
 
 /**
@@ -156,40 +208,6 @@ function initializeNavigation() {
     
     // Handle dropdown links with smooth scrolling
     const dropdownLinks = document.querySelectorAll('.dropdown-link');
-    dropdownLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            const href = this.getAttribute('href');
-            
-            // If it's an anchor link, handle smooth scrolling
-            if (href && href.startsWith('#')) {
-                e.preventDefault();
-                
-                const targetSection = document.querySelector(href);
-                if (targetSection) {
-                    const headerHeight = document.getElementById('header').offsetHeight;
-                    const targetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset - headerHeight - 20;
-                    
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                    
-                    // Close mobile menu
-                    if (window.innerWidth <= 768) {
-                        hamburger.classList.remove('active');
-                        navMenu.classList.remove('active');
-                        document.body.style.overflow = '';
-                        
-                        // Close all dropdowns
-                        dropdowns.forEach(dropdown => {
-                            dropdown.classList.remove('mobile-open');
-                        });
-                    }
-                }
-            }
-        });
-    
-    // Handle dropdown links
     dropdownLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             const href = this.getAttribute('href');
