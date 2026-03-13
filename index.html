@@ -31,7 +31,7 @@
     <!-- Preload Critical Resources -->
     <link rel="preload" href="style.css" as="style">
     <link rel="preload" href="script.js" as="script">
-    <link rel="preload" href="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" as="image">
+    <link rel="preload" href="assets/images/hero-dark.png" as="image">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,8 +61,8 @@
             "addressCountry": "RS"
         },
         "openingHours": [
-            "Mo-Fr 08:00-20:00",
-            "Sa 08:00-14:00"
+            "Mo-Fr 09:00-19:00",
+            "Sa 09:00-15:00"
         ],
         "priceRange": "$$",
         "medicalSpecialty": ["Dentistry", "Cosmetic Dentistry", "Aesthetic Medicine"],
@@ -132,7 +132,7 @@
         <section class="hero" id="home">
             <!-- Background Image -->
             <div class="hero-background">
-                <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Moderna stomatološka ordinacija West u Požegi - Dr Tamara Vesović" class="hero-bg-img" loading="eager">
+                <img src="assets/images/hero-dark.png" alt="Moderna stomatološka ordinacija West u Požegi - Dr Tamara Vesović" class="hero-bg-img" loading="eager">
                 <div class="hero-overlay"></div>
             </div>
             
@@ -755,137 +755,223 @@
                     </p>
                 </div>
                 
-                <div class="reviews-grid">
-                    <div class="review-card fade-in">
-                        <div class="review-header">
-                            <div class="review-avatar">
-                                <img src="review-avatar-1.jpg" alt="Marija P." loading="lazy">
-                            </div>
-                            <div class="review-info">
-                                <h4 class="reviewer-name">Marija P.</h4>
-                                <div class="review-stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
+                <div class="reviews-slider">
+                    <div class="slider-container">
+                        <div class="slider-wrapper" id="reviewsSlider">
+                            <div class="review-slide active">
+                                <div class="review-card">
+                                    <div class="review-header">
+                                        <div class="review-avatar">
+                                            <img src="review-avatar-1.jpg" alt="Marija P." loading="lazy">
+                                        </div>
+                                        <div class="review-info">
+                                            <h4 class="reviewer-name">Marija P.</h4>
+                                            <div class="review-stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review-content">
+                                        <p>"Odlično iskustvo u ordinaciji West! Dr Vesović je veoma profesionalna i pažljiva. Tretman je prošao bez bolova, a rezultat je fantastičan. Toplo preporučujem!"</p>
+                                        <div class="review-date">Januar 2026</div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="review-content">
-                            <p>"Odlično iskustvo u ordinaciji West! Dr Vesović je veoma profesionalna i pažljiva. Tretman je prošao bez bolova, a rezultat je fantastičan. Toplo preporučujem!"</p>
-                            <div class="review-date">Januar 2026</div>
+                            
+                            <div class="review-slide">
+                                <div class="review-card">
+                                    <div class="review-header">
+                                        <div class="review-avatar">
+                                            <img src="review-avatar-2.jpg" alt="Stefan M." loading="lazy">
+                                        </div>
+                                        <div class="review-info">
+                                            <h4 class="reviewer-name">Stefan M.</h4>
+                                            <div class="review-stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review-content">
+                                        <p>"Vrhunska usluga! Ordinacija je moderna, čista i prijatna. Osoblje je ljubazno, a dr Vesović je objasnila svaki korak tretmana. Definitivno ću se vratiti."</p>
+                                        <div class="review-date">Decembar 2025</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="review-slide">
+                                <div class="review-card">
+                                    <div class="review-header">
+                                        <div class="review-avatar">
+                                            <img src="review-avatar-3.jpg" alt="Ana J." loading="lazy">
+                                        </div>
+                                        <div class="review-info">
+                                            <h4 class="reviewer-name">Ana J.</h4>
+                                            <div class="review-stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review-content">
+                                        <p>"Estetski tretman usana je prošao savršeno! Dr Vesović ima odličan estetski osećaj. Rezultat je prirodan i prelep. Hvala na profesionalnom pristupu!"</p>
+                                        <div class="review-date">Novembar 2025</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="review-slide">
+                                <div class="review-card">
+                                    <div class="review-header">
+                                        <div class="review-avatar">
+                                            <img src="review-avatar-4.jpg" alt="Petar N." loading="lazy">
+                                        </div>
+                                        <div class="review-info">
+                                            <h4 class="reviewer-name">Petar N.</h4>
+                                            <div class="review-stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review-content">
+                                        <p>"Implant je postavljen brzo i bez komplikacija. Dr Vesović je vrlo iskusna, a ceo tim je profesionalan. Preporučujem svima koji traže kvalitet!"</p>
+                                        <div class="review-date">Oktobar 2025</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="review-slide">
+                                <div class="review-card">
+                                    <div class="review-header">
+                                        <div class="review-avatar">
+                                            <img src="review-avatar-5.jpg" alt="Jelena S." loading="lazy">
+                                        </div>
+                                        <div class="review-info">
+                                            <h4 class="reviewer-name">Jelena S.</h4>
+                                            <div class="review-stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review-content">
+                                        <p>"Botoks tretman je bio neverovatan! Prirodan rezultat, bez preterivanosti. Dr Vesović je prava stručnjakinja za estetske tretmane. Hvala vam!"</p>
+                                        <div class="review-date">Septembar 2025</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="review-slide">
+                                <div class="review-card">
+                                    <div class="review-header">
+                                        <div class="review-avatar">
+                                            <img src="review-avatar-6.jpg" alt="Milan R." loading="lazy">
+                                        </div>
+                                        <div class="review-info">
+                                            <h4 class="reviewer-name">Milan R.</h4>
+                                            <div class="review-stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review-content">
+                                        <p>"Ortodontski tretman je bio dugačak, ali vredio je. Dr Vesović je bila strpljiva i podržavajuća tokom celog procesa. Konačni rezultat je savršen!"</p>
+                                        <div class="review-date">Avgust 2025</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="review-slide">
+                                <div class="review-card">
+                                    <div class="review-header">
+                                        <div class="review-avatar">
+                                            <img src="review-avatar-7.jpg" alt="Milica T." loading="lazy">
+                                        </div>
+                                        <div class="review-info">
+                                            <h4 class="reviewer-name">Milica T.</h4>
+                                            <div class="review-stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review-content">
+                                        <p>"Beljenje zuba je dalo fantastične rezultate! Zubi su mi za nekoliko nijansi svetliji, a tretman je bio potpuno bezbedan. Dr Vesović je objasnila ceo proces."</p>
+                                        <div class="review-date">Juli 2025</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="review-slide">
+                                <div class="review-card">
+                                    <div class="review-header">
+                                        <div class="review-avatar">
+                                            <img src="review-avatar-8.jpg" alt="Nenad V." loading="lazy">
+                                        </div>
+                                        <div class="review-info">
+                                            <h4 class="reviewer-name">Nenad V.</h4>
+                                            <div class="review-stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review-content">
+                                        <p>"Hiruški zahvat je prošao bez komplikacija. Dr Vesović je vrlo iskusna i precizan. Oporavak je bio brži nego što sam očekivao. Preporučujem!"</p>
+                                        <div class="review-date">Jun 2025</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="review-card fade-in">
-                        <div class="review-header">
-                            <div class="review-avatar">
-                                <img src="review-avatar-2.jpg" alt="Stefan M." loading="lazy">
-                            </div>
-                            <div class="review-info">
-                                <h4 class="reviewer-name">Stefan M.</h4>
-                                <div class="review-stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="review-content">
-                            <p>"Vrhunska usluga! Ordinacija je moderna, čista i prijatna. Osoblje je ljubazno, a dr Vesović je objasnila svaki korak tretmana. Definitivno ću se vratiti."</p>
-                            <div class="review-date">Decembar 2025</div>
-                        </div>
+                    <!-- Slider Controls -->
+                    <div class="slider-controls">
+                        <button class="slider-btn prev-btn" id="prevReview" aria-label="Prethodna recenzija">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="slider-btn next-btn" id="nextReview" aria-label="Sledeća recenzija">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
                     </div>
                     
-                    <div class="review-card fade-in">
-                        <div class="review-header">
-                            <div class="review-avatar">
-                                <img src="review-avatar-3.jpg" alt="Ana J." loading="lazy">
-                            </div>
-                            <div class="review-info">
-                                <h4 class="reviewer-name">Ana J.</h4>
-                                <div class="review-stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="review-content">
-                            <p>"Estetski tretman usana je prošao savršeno! Dr Vesović ima odličan estetski osećaj. Rezultat je prirodan i prelep. Hvala na profesionalnom pristupu!"</p>
-                            <div class="review-date">Novembar 2025</div>
-                        </div>
-                    </div>
-                    
-                    <div class="review-card fade-in">
-                        <div class="review-header">
-                            <div class="review-avatar">
-                                <img src="review-avatar-4.jpg" alt="Petar N." loading="lazy">
-                            </div>
-                            <div class="review-info">
-                                <h4 class="reviewer-name">Petar N.</h4>
-                                <div class="review-stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="review-content">
-                            <p>"Implant je postavljen brzo i bez komplikacija. Dr Vesović je vrlo iskusna, a ceo tim je profesionalan. Preporučujem svima koji traže kvalitet!"</p>
-                            <div class="review-date">Oktobar 2025</div>
-                        </div>
-                    </div>
-                    
-                    <div class="review-card fade-in">
-                        <div class="review-header">
-                            <div class="review-avatar">
-                                <img src="review-avatar-5.jpg" alt="Jelena S." loading="lazy">
-                            </div>
-                            <div class="review-info">
-                                <h4 class="reviewer-name">Jelena S.</h4>
-                                <div class="review-stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="review-content">
-                            <p>"Botoks tretman je bio neverovatan! Prirodan rezultat, bez preterivanosti. Dr Vesović je prava stručnjakinja za estetske tretmane. Hvala vam!"</p>
-                            <div class="review-date">Septembar 2025</div>
-                        </div>
-                    </div>
-                    
-                    <div class="review-card fade-in">
-                        <div class="review-header">
-                            <div class="review-avatar">
-                                <img src="review-avatar-6.jpg" alt="Milan R." loading="lazy">
-                            </div>
-                            <div class="review-info">
-                                <h4 class="reviewer-name">Milan R.</h4>
-                                <div class="review-stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="review-content">
-                            <p>"Ortodontski tretman je bio dugačak, ali vredio je. Dr Vesović je bila strpljiva i podržavajuća tokom celog procesa. Konačni rezultat je savršen!"</p>
-                            <div class="review-date">Avgust 2025</div>
-                        </div>
+                    <!-- Slider Dots -->
+                    <div class="slider-dots" id="reviewDots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                        <span class="dot" data-slide="3"></span>
+                        <span class="dot" data-slide="4"></span>
+                        <span class="dot" data-slide="5"></span>
+                        <span class="dot" data-slide="6"></span>
+                        <span class="dot" data-slide="7"></span>
                     </div>
                 </div>
             </div>
@@ -1024,8 +1110,8 @@
                             <i class="fas fa-clock"></i>
                             <div>
                                 <h4>Radno vreme</h4>
-                                <p>Ponedeljak - Petak: 08:00 - 20:00</p>
-                                <p>Subota: 08:00 - 14:00</p>
+                                <p>Ponedeljak - Petak: 09:00 - 19:00</p>
+                                <p>Subota: 09:00 - 15:00</p>
                                 <p>Nedelja: Zatvoreno</p>
                             </div>
                         </div>
@@ -1114,8 +1200,8 @@
                             <i class="fas fa-clock"></i>
                             <div>
                                 <h4>Radno vreme</h4>
-                                <p>Ponedeljak - Petak: 08:00 - 20:00</p>
-                                <p>Subota: 08:00 - 14:00</p>
+                                <p>Ponedeljak - Petak: 09:00 - 19:00</p>
+                                <p>Subota: 09:00 - 15:00</p>
                                 <p>Nedelja: Zatvoreno</p>
                             </div>
                         </div>
@@ -1129,10 +1215,6 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="contact-form-container fade-in">
-                        <h3>Kontakt forma</h3>
-                        <p>Popunite formu i javićemo vam se u najkraćem roku:</p>
                 </div>
             </div>
         </section>
@@ -1199,8 +1281,8 @@
                 <div class="footer-section">
                     <h4 class="footer-title">Radno vreme</h4>
                     <ul class="footer-schedule">
-                        <li><strong>Pon - Pet:</strong> 08:00 - 20:00</li>
-                        <li><strong>Subota:</strong> 08:00 - 14:00</li>
+                        <li><strong>Pon - Pet:</strong> 09:00 - 19:00</li>
+                        <li><strong>Subota:</strong> 09:00 - 15:00</li>
                         <li><strong>Nedelja:</strong> Zatvoreno</li>
                         <li class="emergency-note">
                             <i class="fas fa-exclamation-triangle"></i>

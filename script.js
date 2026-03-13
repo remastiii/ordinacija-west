@@ -48,6 +48,9 @@ function initializeWebsite() {
         // Before & After Sliders
         { fn: initializeBeforeAfterSliders, name: 'Before/After Sliders' },
         
+        // Reviews Slider
+        { fn: initializeReviewsSlider, name: 'Reviews Slider' },
+        
         // FAQ
         { fn: initializeFAQ, name: 'FAQ' },
         
@@ -1346,6 +1349,180 @@ function initializeSingleSlider(slider) {
     });
     
     observer.observe(slider);
+}
+
+/**
+ * Initialize Reviews Slider
+ */
+function initializeReviewsSlider() {
+    const sliderWrapper = document.getElementById('reviewsSlider');
+    const prevBtn = document.getElementById('prevReview');
+    const nextBtn = document.getElementById('nextReview');
+    const dotsContainer = document.getElementById('reviewDots');
+    
+    if (!sliderWrapper || !prevBtn || !nextBtn || !dotsContainer) {
+        console.warn('Reviews slider elements not found');
+        return;
+    }
+    
+    const slides = sliderWrapper.querySelectorAll('.review-slide');
+    const dots = dotsContainer.querySelectorAll('.dot');
+    let currentSlide = 0;
+    let isAnimating = false;
+    
+    // Auto-slide configuration
+    let autoSlideInterval;
+    const SLIDE_DURATION = 5000; // 5 seconds
+    
+    function updateSlider() {
+        if (isAnimating) return;
+        isAnimating = true;
+        
+        // Move slider
+        const translateX = -currentSlide * 100;
+        sliderWrapper.style.transform = `translateX(${translateX}%)`;
+        
+        // Update active states
+        slides.forEach((slide, index) => {
+            slide.classList.toggle('active', index === currentSlide);
+        });
+        
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentSlide);
+        });
+        
+        setTimeout(() => {
+            isAnimating = false;
+        }, 500);
+    }
+    
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        updateSlider();
+    }
+    
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        updateSlider();
+    }
+    
+    function goToSlide(slideIndex) {
+        if (slideIndex >= 0 && slideIndex < slides.length) {
+            currentSlide = slideIndex;
+            updateSlider();
+        }
+    }
+    
+    function startAutoSlide() {
+        stopAutoSlide();
+        autoSlideInterval = setInterval(nextSlide, SLIDE_DURATION);
+    }
+    
+    function stopAutoSlide() {
+        if (autoSlideInterval) {
+            clearInterval(autoSlideInterval);
+            autoSlideInterval = null;
+        }
+    }
+    
+    // Event listeners
+    nextBtn.addEventListener('click', () => {
+        nextSlide();
+        stopAutoSlide();
+        startAutoSlide(); // Restart after manual interaction
+    });
+    
+    prevBtn.addEventListener('click', () => {
+        prevSlide();
+        stopAutoSlide();
+        startAutoSlide(); // Restart after manual interaction
+    });
+    
+    // Dot navigation
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            goToSlide(index);
+            stopAutoSlide();
+            startAutoSlide(); // Restart after manual interaction
+        });
+    });
+    
+    // Pause auto-slide on hover
+    const sliderContainer = sliderWrapper.closest('.reviews-slider');
+    if (sliderContainer) {
+        sliderContainer.addEventListener('mouseenter', stopAutoSlide);
+        sliderContainer.addEventListener('mouseleave', startAutoSlide);
+    }
+    
+    // Touch/swipe support for mobile
+    let touchStartX = 0;
+    let touchStartY = 0;
+    
+    sliderWrapper.addEventListener('touchstart', (e) => {
+        touchStartX = e.touches[0].clientX;
+        touchStartY = e.touches[0].clientY;
+        stopAutoSlide();
+    }, { passive: true });
+    
+    sliderWrapper.addEventListener('touchmove', (e) => {
+        // Prevent scrolling when sliding horizontally
+        if (Math.abs(e.touches[0].clientX - touchStartX) > Math.abs(e.touches[0].clientY - touchStartY)) {
+            e.preventDefault();
+        }
+    });
+    
+    sliderWrapper.addEventListener('touchend', (e) => {
+        const touchEndX = e.changedTouches[0].clientX;
+        const touchEndY = e.changedTouches[0].clientY;
+        const diffX = touchStartX - touchEndX;
+        const diffY = touchStartY - touchEndY;
+        
+        // Only trigger if horizontal movement is greater than vertical
+        if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 50) {
+            if (diffX > 0) {
+                nextSlide();
+            } else {
+                prevSlide();
+            }
+        }
+        
+        startAutoSlide();
+    }, { passive: true });
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (document.activeElement && document.activeElement.closest('.reviews-slider')) {
+            switch (e.key) {
+                case 'ArrowLeft':
+                    e.preventDefault();
+                    prevSlide();
+                    stopAutoSlide();
+                    startAutoSlide();
+                    break;
+                case 'ArrowRight':
+                    e.preventDefault();
+                    nextSlide();
+                    stopAutoSlide();
+                    startAutoSlide();
+                    break;
+            }
+        }
+    });
+    
+    // Initialize
+    updateSlider();
+    startAutoSlide();
+    
+    // Pause when page is not visible
+    document.addEventListener('visibilitychange', () => {
+        if (document.hidden) {
+            stopAutoSlide();
+        } else {
+            startAutoSlide();
+        }
+    });
+    
+    console.log('Reviews slider initialized successfully');
 }
 
 // Export functions for testing

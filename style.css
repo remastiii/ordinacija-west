@@ -238,29 +238,40 @@ p {
 }
 
 .btn-primary {
-    background-color: var(--primary-color);
-    color: var(--white);
-    border-color: var(--primary-color);
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    color: var(--white) !important;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(44, 90, 160, 0.3);
+    transition: all 0.3s ease;
 }
 
 .btn-primary:hover:not(:disabled) {
-    background-color: var(--primary-dark);
-    border-color: var(--primary-dark);
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px -8px rgba(44, 90, 160, 0.5);
+    box-shadow: 0 6px 20px rgba(44, 90, 160, 0.4);
 }
 
 .btn-secondary {
-    background-color: transparent;
-    color: var(--primary-color);
-    border-color: var(--primary-color);
+    background: transparent;
+    color: var(--white) !important;
+    border: 2px solid var(--white);
+    border-radius: 25px;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
 }
 
 .btn-secondary:hover:not(:disabled) {
-    background-color: var(--primary-color);
-    color: var(--white);
+    background: var(--white);
+    color: var(--primary-color) !important;
+    border-color: var(--white);
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px -8px rgba(44, 90, 160, 0.3);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+    text-shadow: none;
 }
 
 .btn-tertiary {
@@ -279,14 +290,19 @@ p {
 
 .btn-whatsapp {
     background: linear-gradient(135deg, #25d366, #128c7e);
-    color: var(--white);
-    border-color: #25d366;
+    color: var(--white) !important;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+    transition: all 0.3s ease;
 }
 
 .btn-whatsapp:hover:not(:disabled) {
     background: linear-gradient(135deg, #128c7e, #075e54);
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px -8px rgba(37, 211, 102, 0.4);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
 }
 
 .btn-full {
@@ -403,13 +419,14 @@ p {
     padding: 10px 20px;
     border-radius: 25px;
     font-size: var(--font-size-sm);
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     box-shadow: 0 4px 15px rgba(44, 90, 160, 0.3);
     display: flex;
     align-items: center;
     gap: var(--spacing-xs);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .cta-nav:hover {
@@ -579,12 +596,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-        135deg,
-        rgba(44, 90, 160, 0.85) 0%,
-        rgba(30, 63, 115, 0.75) 50%,
-        rgba(44, 90, 160, 0.9) 100%
-    );
+    background: rgba(0, 0, 0, 0.9);
     z-index: -1;
 }
 
@@ -686,7 +698,7 @@ p {
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: var(--white);
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 50%;
     color: var(--primary-color);
     box-shadow: var(--box-shadow);
@@ -878,33 +890,26 @@ p {
     align-items: center;
     justify-content: center;
     gap: var(--spacing-sm);
-    background-color: var(--primary-color);
-    color: var(--white);
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    color: var(--white) !important;
     padding: 12px 24px;
     border-radius: 25px;
     font-weight: 600;
     transition: all var(--transition-base);
     text-decoration: none;
-    border: 2px solid var(--primary-color);
+    border: none;
     width: 100%;
     margin-top: 10px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(44, 90, 160, 0.3);
 }
 
-.service-btn.btn-secondary {
-    background-color: #8b5cf6;
-    border-color: #8b5cf6;
-}
 
-.service-btn.btn-secondary:hover {
-    background: transparent;
-    color: #8b5cf6;
-    transform: translateY(-2px);
-}
 
 .service-btn:hover {
-    background: transparent;
-    color: var(--primary-color);
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
     transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(44, 90, 160, 0.4);
 }
 
 .service-btn i {
@@ -1041,6 +1046,33 @@ p {
     background-color: var(--medical-gray);
 }
 
+.reviews-slider {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slider-container {
+    overflow: hidden;
+    border-radius: var(--border-radius-lg);
+    position: relative;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.review-slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.review-slide.active {
+    opacity: 1;
+}
+
 .reviews-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -1055,6 +1087,8 @@ p {
     box-shadow: var(--box-shadow);
     transition: all var(--transition-base);
     position: relative;
+    max-width: 600px;
+    width: 100%;
 }
 
 .review-card::before {
@@ -1126,12 +1160,73 @@ p {
     font-weight: 500;
 }
 
+/* Slider Controls */
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.slider-btn {
+    background-color: var(--white);
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all var(--transition-base);
+    color: var(--primary-color);
+    font-size: var(--font-size-lg);
+}
+
+.slider-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: var(--box-shadow);
+}
+
+.slider-btn:active {
+    transform: translateY(0);
+}
+
+/* Slider Dots */
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-lg);
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--border-color);
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.dot.active {
+    background-color: var(--primary-color);
+    transform: scale(1.2);
+}
+
+.dot:hover {
+    background-color: var(--medical-blue);
+}
+
 .reviews-cta {
     text-align: center;
     background-color: var(--white);
     padding: var(--spacing-2xl);
     border-radius: var(--border-radius-lg);
     box-shadow: var(--box-shadow);
+    margin-top: var(--spacing-3xl);
 }
 
 .reviews-cta h3 {
@@ -1375,19 +1470,22 @@ p {
     align-items: center;
     gap: 8px;
     padding: 12px 20px;
-    background: linear-gradient(135deg, var(--primary-color) 0%, #1e4a72 100%);
-    color: white;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    color: var(--white) !important;
     text-decoration: none;
     border-radius: 25px;
     font-weight: 600;
     font-size: 1.1rem;
     transition: all 0.3s ease;
     margin-top: 8px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(44, 90, 160, 0.3);
 }
 
 .contact-phone:hover {
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(44, 90, 160, 0.3);
+    box-shadow: 0 6px 20px rgba(44, 90, 160, 0.4);
 }
 
 .contact-whatsapp {
@@ -1395,18 +1493,21 @@ p {
     align-items: center;
     gap: 8px;
     padding: 12px 20px;
-    background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
-    color: white;
+    background: linear-gradient(135deg, #25d366, #128c7e);
+    color: var(--white) !important;
     text-decoration: none;
     border-radius: 25px;
     font-weight: 600;
     transition: all 0.3s ease;
     margin-top: 8px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
 }
 
 .contact-whatsapp:hover {
+    background: linear-gradient(135deg, #128c7e, #075e54);
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
 }
 
 .contact-email {
@@ -1435,28 +1536,25 @@ p {
     align-items: center;
     gap: 8px;
     padding: 10px 16px;
-    background: #dc3545;
-    color: white;
+    background: linear-gradient(135deg, #e53e3e 0%, #c53030 100%);
+    color: var(--white) !important;
     text-decoration: none;
-    border-radius: 20px;
+    border-radius: 25px;
     font-weight: 600;
     font-size: 0.95rem;
     transition: all 0.3s ease;
     margin-top: 8px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(229, 62, 62, 0.3);
 }
 
 .emergency-phone:hover {
-    background: #c82333;
-    transform: translateY(-1px);
+    background: linear-gradient(135deg, #fc8181 0%, #e53e3e 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(229, 62, 62, 0.4);
 }
 
-.contact-form-container {
-    background: var(--white);
-    padding: var(--spacing-xl);
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    border: 1px solid rgba(44, 90, 160, 0.1);
-}
+
 
 .contact-form-container h3 {
     margin-top: 0;
@@ -2118,8 +2216,24 @@ p {
     }
     
     /* Reviews */
-    .reviews-grid {
-        grid-template-columns: 1fr;
+    .reviews-slider {
+        max-width: 100%;
+        padding: 0 var(--spacing-md);
+    }
+    
+    .review-card {
+        padding: var(--spacing-lg);
+    }
+    
+    .slider-btn {
+        width: 45px;
+        height: 45px;
+        font-size: var(--font-size-base);
+    }
+    
+    .slider-controls {
+        gap: var(--spacing-md);
+        margin-top: var(--spacing-lg);
     }
     
     /* FAQ */
@@ -2458,19 +2572,6 @@ p {
     justify-content: center;
     gap: 15px;
     flex-wrap: wrap;
-}
-
-.btn-whatsapp {
-    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
-    color: white;
-    border: none;
-}
-
-.btn-whatsapp:hover {
-    background: linear-gradient(135deg, #128C7E 0%, #075E54 100%);
-    color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
 }
 
 /* Mobile Responsiveness for New Features */
