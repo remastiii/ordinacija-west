@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="sr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mezoterapija | Ordinacija West Dr Tamara Vesović. Tretman mezoterapije za pomlađivanje kože, poboljšanje teksture i vraćanje sjaja kože lica.">
+    <meta name="keywords" content="mezoterapija Požega, pomlađivanje kože, Dr Tamara Vesović, ordinacija west, vitaminska mezoterapija">
+    <meta name="author" content="Dr Tamara Vesović - Ordinacija West">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#2c5aa0">
+    
+    <title>Mezoterapija | Ordinacija West Požega</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        :root {
+            --primary-color: #2c5aa0;
+            --secondary-color: #4a7bc8;
+            --accent-color: #f8f9fa;
+            --text-primary: #2c3e50;
+            --text-secondary: #6c7b7f;
+            --border-color: #e0e6ed;
+            --shadow-light: 0 2px 10px rgba(44, 90, 160, 0.1);
+            --shadow-medium: 0 4px 20px rgba(44, 90, 160, 0.15);
+        }
+        
+        .treatment-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .treatment-header {
+            text-align: center;
+            padding: 100px 0 60px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            margin-top: 80px;
+        }
+        
+        .treatment-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .treatment-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        .qa-section {
+            padding: 60px 0;
+        }
+        
+        .qa-section.gray-bg {
+            background-color: #f8f9fa;
+        }
+        
+        .qa-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+        
+        .question-side {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 200px;
+        }
+        
+        .question {
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.3;
+        }
+        
+        .answer-side {
+            padding: 40px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: var(--shadow-medium);
+            border-left: 5px solid var(--primary-color);
+        }
+        
+        .answer {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-primary);
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        .back-btn {
+            position: fixed;
+            top: 100px;
+            left: 30px;
+            background: var(--primary-color);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: var(--shadow-medium);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+        
+        .back-btn:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+            color: white;
+        }
+        
+        .back-btn i {
+            margin-right: 8px;
+        }
+        
+        .placeholder-notice {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 40px auto;
+            max-width: 800px;
+            text-align: center;
+            color: #856404;
+        }
+        
+        @media (max-width: 768px) {
+            .qa-container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .question-side {
+                min-height: auto;
+                padding: 20px 0;
+            }
+            
+            .question {
+                font-size: 1.5rem;
+            }
+            
+            .answer-side {
+                padding: 30px 20px;
+            }
+            
+            .treatment-title {
+                font-size: 2rem;
+            }
+            
+            .treatment-header {
+                padding: 120px 0 40px;
+            }
+            
+            .back-btn {
+                top: 85px;
+                left: 15px;
+                padding: 10px 16px;
+                font-size: 0.9rem;
+            }
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            width: auto;
+            height: 60px;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 16px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #128c7e;
+            transform: scale(1.05);
+            color: white;
+        }
+
+        .whatsapp-float i {
+            margin-right: 10px;
+            font-size: 24px;
+        }
+
+        @media (max-width: 768px) {
+            .whatsapp-float {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                padding: 0;
+                justify-content: center;
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            .whatsapp-float span {
+                display: none;
+            }
+            
+            .whatsapp-float i {
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Back Button -->
+    <a href="index.html#home" class="back-btn">
+        <i class="fas fa-arrow-left"></i>
+        Nazad na početnu
+    </a>
+
+    <!-- Treatment Header -->
+    <div class="treatment-header">
+        <div class="treatment-container">
+            <h1 class="treatment-title">Mezoterapija</h1>
+            <p class="treatment-subtitle">
+                Vitaminska mezoterapija za duboku hidraciju, pomlađivanje i obnavljanje kože lica
+            </p>
+        </div>
+    </div>
+
+    <!-- Placeholder Notice -->
+    <div class="treatment-container">
+        <div class="placeholder-notice">
+            <i class="fas fa-info-circle" style="font-size: 24px; margin-bottom: 10px;"></i>
+            <h3>Sadržaj u pripremi</h3>
+            <p>Detaljne informacije o mezoterapiji će uskoro biti dostupne. Za više informacija kontaktirajte nas direktno.</p>
+        </div>
+    </div>
+
+    <!-- Q&A Sections -->
+    <main>
+        <!-- Section 1 -->
+        <section class="qa-section">
+            <div class="treatment-container">
+                <div class="qa-container">
+                    <div class="question-side">
+                        <h2 class="question">Šta je mezoterapija?</h2>
+                    </div>
+                    <div class="answer-side">
+                        <p class="answer">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2 -->
+        <section class="qa-section gray-bg">
+            <div class="treatment-container">
+                <div class="qa-container">
+                    <div class="question-side">
+                        <h2 class="question">Koje vitamine sadrži?</h2>
+                    </div>
+                    <div class="answer-side">
+                        <p class="answer">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3 -->
+        <section class="qa-section">
+            <div class="treatment-container">
+                <div class="qa-container">
+                    <div class="question-side">
+                        <h2 class="question">Da li je postupak bolan?</h2>
+                    </div>
+                    <div class="answer-side">
+                        <p class="answer">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4 -->
+        <section class="qa-section gray-bg">
+            <div class="treatment-container">
+                <div class="qa-container">
+                    <div class="question-side">
+                        <h2 class="question">Koliko tretmana je potrebno?</h2>
+                    </div>
+                    <div class="answer-side">
+                        <p class="answer">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5 -->
+        <section class="qa-section">
+            <div class="treatment-container">
+                <div class="qa-container">
+                    <div class="question-side">
+                        <h2 class="question">Kada se vide rezultati?</h2>
+                    </div>
+                    <div class="answer-side">
+                        <p class="answer">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6 -->
+        <section class="qa-section gray-bg">
+            <div class="treatment-container">
+                <div class="qa-container">
+                    <div class="question-side">
+                        <h2 class="question">Za koje tipove kože je pogodna?</h2>
+                    </div>
+                    <div class="answer-side">
+                        <p class="answer">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/381643456789?text=Dobar%20dan%21%20Interesuje%20me%20mezoterapija.%20Možete%20li%20mi%20reći%20više%20informacija%3F" 
+       target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+        <span>Zakaži mezoterapiju</span>
+    </a>
+
+    <script>
+        // Smooth scroll for back button
+        document.querySelector('.back-btn').addEventListener('click', function(e) {
+            if (this.getAttribute('href').includes('#')) {
+                e.preventDefault();
+                const target = this.getAttribute('href').split('#')[1];
+                if (target === 'home') {
+                    window.location.href = 'index.html#home';
+                }
+            }
+        });
+    </script>
+</body>
+</html>

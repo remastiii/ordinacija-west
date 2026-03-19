@@ -2129,6 +2129,13 @@ p {
         border-bottom: 1px solid var(--border-color);
     }
     
+    /* Priority positioning for Tretmani dropdown in mobile */
+    .nav-item.dropdown {
+        order: -10;
+        border-bottom: 2px solid var(--primary-color);
+        background-color: rgba(44, 90, 160, 0.03);
+    }
+    
     .nav-item:last-child {
         border-bottom: none;
     }
@@ -2162,6 +2169,12 @@ p {
         font-size: var(--font-size-base);
         color: var(--text-primary);
         cursor: pointer;
+        font-weight: 600;
+    }
+    
+    .dropdown-toggle:hover {
+        background-color: var(--medical-light-blue);
+        color: var(--primary-color);
     }
     
     .dropdown-toggle i {
@@ -2189,7 +2202,7 @@ p {
     }
     
     .dropdown.mobile-open .dropdown-menu {
-        max-height: 300px;
+        max-height: 400px;
     }
     
     .dropdown-link {
@@ -3024,5 +3037,268 @@ p {
     
     .handle-circle i {
         font-size: 6px;
+    }
+}
+
+/* ================================
+   TREATMENTS SECTION
+   ================================ */
+
+.treatments {
+    padding: var(--section-padding) 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e8f4f8 100%);
+}
+
+.treatments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.treatment-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(44, 90, 160, 0.1);
+    transition: all var(--transition-base);
+    border: 1px solid rgba(44, 90, 160, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.treatment-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    opacity: 0;
+    transition: opacity var(--transition-base);
+}
+
+.treatment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(44, 90, 160, 0.2);
+}
+
+.treatment-card:hover::before {
+    opacity: 1;
+}
+
+.treatment-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: transform var(--transition-base);
+}
+
+.treatment-card:hover .treatment-icon {
+    transform: scale(1.1);
+}
+
+.treatment-icon i {
+    font-size: 24px;
+    color: white;
+}
+
+.treatment-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.treatment-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.treatment-benefits {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+}
+
+.treatment-benefits li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.treatment-benefits li i {
+    color: var(--primary-color);
+    margin-right: 10px;
+    font-size: 12px;
+    width: 16px;
+}
+
+.treatment-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all var(--transition-base);
+    width: 100%;
+    justify-content: center;
+}
+
+.treatment-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(44, 90, 160, 0.3);
+    color: white;
+}
+
+.treatment-btn i {
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+/* CTA Section within Treatments */
+.treatments-cta {
+    text-align: center;
+    margin-top: 60px;
+    padding: 40px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(44, 90, 160, 0.1);
+}
+
+.treatments-cta h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.treatments-cta p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all var(--transition-base);
+    min-width: 200px;
+    justify-content: center;
+}
+
+.cta-btn.primary {
+    background: #25d366;
+    color: white;
+}
+
+.cta-btn.primary:hover {
+    background: #128c7e;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+    color: white;
+}
+
+.cta-btn.secondary {
+    background: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.cta-btn.secondary:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(44, 90, 160, 0.3);
+}
+
+.cta-btn i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .treatments-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 30px;
+    }
+    
+    .treatment-card {
+        padding: 25px;
+    }
+    
+    .treatment-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .treatments-cta {
+        padding: 30px 20px;
+        margin-top: 40px;
+    }
+    
+    .treatments-cta h3 {
+        font-size: 1.5rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-btn {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .treatment-card {
+        padding: 20px;
+    }
+    
+    .treatment-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .treatment-icon i {
+        font-size: 20px;
+    }
+    
+    .treatments-cta {
+        padding: 25px 15px;
     }
 }
