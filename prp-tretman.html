@@ -124,17 +124,18 @@
         
         .back-btn {
             position: fixed;
-            top: 100px;
-            left: 30px;
+            top: 20px;
+            left: 20px;
             background: var(--primary-color);
             color: white;
-            padding: 12px 20px;
-            border-radius: 50px;
+            padding: 15px 25px;
+            border-radius: 10px;
             text-decoration: none;
             font-weight: 600;
             box-shadow: var(--shadow-medium);
             transition: all 0.3s ease;
             z-index: 1000;
+            border: 2px solid white;
         }
         
         .back-btn:hover {
@@ -175,9 +176,9 @@
             }
             
             .back-btn {
-                top: 85px;
+                top: 15px;
                 left: 15px;
-                padding: 10px 16px;
+                padding: 12px 18px;
                 font-size: 0.9rem;
             }
         }
@@ -320,6 +321,29 @@
         </section>
     </main>
 
+    <!-- Footer -->
+    <footer class="treatment-footer">
+        <div class="treatment-container">
+            <div class="footer-content">
+                <div class="footer-contact">
+                    <h4>Kontakt</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Vojvode Mišića 50, Požega</p>
+                    <p><i class="fas fa-phone"></i> +381 64 345 6789</p>
+                    <p><i class="fas fa-envelope"></i> info@ordinacija-west.rs</p>
+                </div>
+                <div class="footer-back">
+                    <a href="index.html#tretmani" class="footer-back-btn">
+                        <i class="fas fa-arrow-left"></i>
+                        Povratak na tretmane
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ordinacija West. Sva prava zadržana.</p>
+            </div>
+        </div>
+    </footer>
+
     <!-- WhatsApp Button -->
     <a href="https://wa.me/381643456789?text=Dobar%20dan%21%20Interesuje%20me%20PRP%20tretman.%20Možete%20li%20mi%20reći%20više%20informacija%3F" 
        target="_blank" class="whatsapp-float">
@@ -377,6 +401,84 @@
             
             .whatsapp-float i {
                 margin: 0;
+            }
+        }
+        
+        /* Footer Styles */
+        .treatment-footer {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 50px 0 20px;
+            margin-top: 60px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-contact h4 {
+            color: white;
+            margin-bottom: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .footer-contact p {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            color: white;
+            font-weight: 500;
+        }
+        
+        .footer-contact i {
+            margin-right: 10px;
+            width: 16px;
+        }
+        
+        .footer-back-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 15px 25px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+        }
+        
+        .footer-back-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+            color: white;
+        }
+        
+        .footer-back-btn i {
+            margin-right: 8px;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding-top: 20px;
+            text-align: center;
+            color: white;
+            font-weight: 500;
+        }
+        
+        @media (max-width: 768px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                text-align: center;
+            }
+            
+            .footer-contact p {
+                justify-content: center;
             }
         }
     </style>
