@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="sr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lipoliza | Ordinacija West Dr Tamara Vesović. Neinvazivno uklanjanje lokalnih masnih naslaga pomoću lipolititskih injekcija za konturiranje tela.">
+    <meta name="keywords" content="lipoliza Požega, uklanjanje masti, konturiranje tela, lipolititske injekcije, Dr Tamara Vesović, ordinacija west">
+    <meta name="author" content="Dr Tamara Vesović - Ordinacija West">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#2c5aa0">
+    
+    <title>Lipoliza | Ordinacija West Požega</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        :root {
+            --primary-color: #2c5aa0;
+            --secondary-color: #4a7bc8;
+            --accent-color: #f8f9fa;
+            --text-primary: #2c3e50;
+            --text-secondary: #6c7b7f;
+            --border-color: #e0e6ed;
+            --shadow-light: 0 2px 10px rgba(44, 90, 160, 0.1);
+            --shadow-medium: 0 4px 20px rgba(44, 90, 160, 0.15);
+        }
+        
+        .treatment-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .treatment-header {
+            text-align: center;
+            padding: 100px 0 60px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            margin-top: 80px;
+            position: relative;
+        }
+        
+        .treatment-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+        }
+        
+        .treatment-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+            color: white;
+        }
+        
+        .content-section {
+            padding: 60px 0;
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+            margin-bottom: 60px;
+        }
+        
+        .content-card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: var(--shadow-medium);
+            border-left: 5px solid var(--primary-color);
+        }
+        
+        .content-card h3 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .content-card p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+        
+        .content-card ul {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+        
+        .content-card li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            color: var(--text-primary);
+        }
+        
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        
+        .area-item {
+            text-align: center;
+            padding: 30px 20px;
+            background: linear-gradient(135deg, var(--accent-color), white);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .area-item:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+            box-shadow: var(--shadow-medium);
+        }
+        
+        .area-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            margin: 0 auto 20px;
+        }
+        
+        .area-title {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .area-description {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        
+        .benefits-section {
+            background: var(--accent-color);
+            padding: 60px 0;
+            margin: 60px 0;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 25px;
+            background: white;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+        
+        .benefit-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .benefit-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+        
+        .benefit-content h4 {
+            color: var(--primary-color);
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .benefit-content p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin: 0;
+        }
+        
+        .process-timeline {
+            background: white;
+            padding: 60px 0;
+            margin: 60px 0;
+        }
+        
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .process-step {
+            text-align: center;
+            padding: 30px 20px;
+            background: var(--accent-color);
+            border-radius: 15px;
+            box-shadow: var(--shadow-light);
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 20px;
+        }
+        
+        .step-title {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .step-description {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        
+        .treatment-footer {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 60px 0 40px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 40px;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        
+        .footer-contact h4 {
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        
+        .footer-contact p {
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+        
+        .footer-contact i {
+            margin-right: 10px;
+            width: 20px;            color: white;        }
+        
+        .footer-back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 30px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+        }
+        
+        .footer-back-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+            color: white;
+        }
+        
+        .footer-back-btn i {
+            margin-right: 8px;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding-top: 20px;
+            text-align: center;
+            color: white;
+            font-weight: 500;
+        }
+        
+        .footer-bottom p {
+            color: white;
+            margin: 0;
+        }
+        
+        .back-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            color: var(--primary-color);
+            padding: 12px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: var(--shadow-medium);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(44, 90, 160, 0.1);
+        }
+        
+        .back-btn:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .back-btn i {
+            margin-right: 8px;
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+        
+        .whatsapp-float:hover {
+            background-color: #22c55e;
+            transform: scale(1.1);
+            color: white;
+        }
+        
+        .whatsapp-float span {
+            position: absolute;
+            right: 70px;
+            background: #333;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 14px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .whatsapp-float:hover span {
+            opacity: 1;
+            visibility: visible;
+            right: 75px;
+        }
+        
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .areas-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .process-steps {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 20px;
+            }
+            
+            .treatment-title {
+                font-size: 2.5rem;
+            }
+            
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+            }
+            
+            .whatsapp-float span {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Back Button -->
+    <a href="index.html#tretmani" class="back-btn">
+        <i class="fas fa-arrow-left"></i>
+        Nazad na tretmane
+    </a>
+
+    <!-- Treatment Header -->
+    <div class="treatment-header">
+        <div class="treatment-container">
+            <h1 class="treatment-title">Lipoliza</h1>
+            <p class="treatment-subtitle">
+                Neinvazivno uklanjanje lokalnih masnih naslaga pomoću lipolititskih injekcija za savršeno konturiranje tela
+            </p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content-section">
+        <div class="treatment-container">
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>Šta je lipoliza?</h3>
+                    <p>Lipoliza predstavlja naprednu metodu neinvazivnog uklanjanja lokalnih masnih naslaga pomoću lipolititskih injekcija. Ova procedura koristi biokompatibilne supstance koje razgrađuju masne ćelije i omogućavaju njihovo prirodno uklanjanje iz organizma.</p>
+                    
+                    <p>Glavne karakteristike lipolize:</p>
+                    <ul>
+                        <li>Neinvazivan pristup bez hirurške intervencije</li>
+                        <li>Ciljno delovanje na problematične zone</li>
+                        <li>Prirodno uklanjanje razložene masti</li>
+                        <li>Minimalno vreme oporavka</li>
+                        <li>Dugotrajni rezultati</li>
+                    </ul>
+                </div>
+                
+                <div class="content-card">
+                    <h3>Kako deluje tretman?</h3>
+                    <p>Lipolititske injekcije sadrže supstance koje direktno deluju na membranu masnih ćelija, uzrokujući njihovu kontrolisanu razgradnju. Oslobođena mast se zatim prirodno metaboliše i uklanja iz organizma putem limfnog sistema.</p>
+                    
+                    <p>Proces lipolize:</p>
+                    <ul>
+                        <li><strong>Aplikacija</strong> - Precizne injekcije u ciljne zone</li>
+                        <li><strong>Razgradnja</strong> - Rastvaranje masnih ćelija</li>
+                        <li><strong>Metabolizam</strong> - Prirodno uklanjanje masti</li>
+                        <li><strong>Konturiranje</strong> - Oblikovanje željenih kontura</li>
+                    </ul>
+                    
+                    <p>Rezultati su vidljivi nakon 2-4 nedelje, a optimalni efekat se postiže nakon 2-3 meseca.</p>
+                </div>
+            </div>
+
+            <!-- Treatment Areas -->
+            <h2 style="text-align: center; color: var(--primary-color); margin: 60px 0 40px; font-family: 'Montserrat', sans-serif;">Zone tretiranja</h2>
+            <div class="areas-grid">
+                <div class="area-item">
+                    <div class="area-icon">
+                        <i class="fas fa-hand-point-down"></i>
+                    </div>
+                    <h4 class="area-title">Abdomen</h4>
+                    <p class="area-description">Uklanjanje masnih naslaga sa stomaka i bočnih strana</p>
+                </div>
+                
+                <div class="area-item">
+                    <div class="area-icon">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h4 class="area-title">Bedra i bokovi</h4>
+                    <p class="area-description">Oblikovanje linije bedara i uklanjanje "love handles"</p>
+                </div>
+                
+                <div class="area-item">
+                    <div class="area-icon">
+                        <i class="fas fa-male"></i>
+                    </div>
+                    <h4 class="area-title">Dvojna brada</h4>
+                    <p class="area-description">Definisanje linije vilice i uklanjanje podočnih masnih naslaga</p>
+                </div>
+                
+                <div class="area-item">
+                    <div class="area-icon">
+                        <i class="fas fa-female"></i>
+                    </div>
+                    <h4 class="area-title">Ruke</h4>
+                    <p class="area-description">Konturiranje nadlaktica i uklanjanje "mahajućih" masnih naslaga</p>
+                </div>
+                
+                <div class="area-item">
+                    <div class="area-icon">
+                        <i class="fas fa-walking"></i>
+                    </div>
+                    <h4 class="area-title">Noge</h4>
+                    <p class="area-description">Oblikovanje butina i uklanjanje masnih naslaga na kolenima</p>
+                </div>
+                
+                <div class="area-item">
+                    <div class="area-icon">
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <h4 class="area-title">Lokalne zone</h4>
+                    <p class="area-description">Ciljno tretiranje specifičnih problemskih oblasti</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Benefits Section -->
+    <div class="benefits-section">
+        <div class="treatment-container">
+            <h2 style="text-align: center; color: var(--primary-color); margin-bottom: 50px; font-family: 'Montserrat', sans-serif;">Prednosti lipolize</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h4>Neinvazivnost</h4>
+                        <p>Bez hirurških rezova, anestezije ili prolongiranog oporavka</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-crosshairs"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h4>Precizno ciljanje</h4>
+                        <p>Tretiranje specifičnih zona bez uticaja na okolno tkivo</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h4>Brza procedura</h4>
+                        <p>Tretman traje 30-45 minuta bez potrebe za hospitalizacijom</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h4>Prirodno uklanjanje</h4>
+                        <p>Mast se prirodno metaboliše i uklanja iz organizma</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h4>Dugotrajni rezultati</h4>
+                        <p>Permanentno uklanjanje masnih ćelija sa trajnim efektom</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h4>Personalizovan pristup</h4>
+                        <p>Plan tretmana prilagođen individualnim potrebama i željama</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Process Timeline -->
+    <div class="process-timeline">
+        <div class="treatment-container">
+            <h2 style="text-align: center; color: var(--primary-color); margin-bottom: 50px; font-family: 'Montserrat', sans-serif;">Tok tretmana</h2>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h4 class="step-title">Konsultacija</h4>
+                    <p class="step-description">Analiza problematičnih zona i kreiranje individualnog plana tretmana</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h4 class="step-title">Označavanje</h4>
+                    <p class="step-description">Precizno mapiranje zona za tretiranje i određivanje tačaka aplikacije</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h4 class="step-title">Aplikacija</h4>
+                    <p class="step-description">Kontrolisane injekcije lipolititskog preparata u označene zone</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h4 class="step-title">Praćenje</h4>
+                    <p class="step-description">Redovne kontrole i praćenje napretka tokom narednih meseci</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Content -->
+    <div class="content-section">
+        <div class="treatment-container">
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>Za koga je namenjena?</h3>
+                    <p>Lipoliza je idealna za osobe koje žele da uklone lokalne masne naslage koje se ne mogu ukloniti vežbanjem i dijetom.</p>
+                    
+                    <p><strong>Idealni kandidati:</strong></p>
+                    <ul>
+                        <li>Osobe sa lokalnim masnim naslagama</li>
+                        <li>Stabilna telesna težina</li>
+                        <li>Dobro opšte zdravstveno stanje</li>
+                        <li>Realna očekivanja od rezultata</li>
+                        <li>Nemogućnost uklanjanja masti vežbanjem</li>
+                    </ul>
+                    
+                    <p><strong>Kontraindikacije:</strong></p>
+                    <ul>
+                        <li>Trudnoća i dojenje</li>
+                        <li>Poremećaji koagulacije</li>
+                        <li>Aktivne infekcije u zoni tretiranja</li>
+                        <li>Autoimune bolesti</li>
+                    </ul>
+                </div>
+                
+                <div class="content-card">
+                    <h3>Oporavak i rezultati</h3>
+                    <p>Oporavak nakon lipolize je relativno brz, a većina pacijenata može da nastavi sa redovnim aktivnostima već sledećeg dana.</p>
+                    
+                    <p><strong>Timeline rezultata:</strong></p>
+                    <ul>
+                        <li><strong>Odmah:</strong> Blagi otok i crvenilo</li>
+                        <li><strong>1-2 nedelje:</strong> Smanjenje otoka</li>
+                        <li><strong>4-6 nedelja:</strong> Prvi vidljivi rezultati</li>
+                        <li><strong>3 meseca:</strong> Optimalni rezultat</li>
+                    </ul>
+                    
+                    <p>Za najbolje rezultate potrebno je 2-4 tretmana u razmaku od 6-8 nedelja, u zavisnosti od količine masti i zone tretiranja.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="treatment-footer">
+        <div class="treatment-container">
+            <div class="footer-content">
+                <div class="footer-contact">
+                    <h4>Kontakt</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Vojvode Mišića 50, Požega</p>
+                    <p><i class="fas fa-phone"></i> 060 600 7088</p>
+                    <p><i class="fas fa-envelope"></i> info@ordinacija-west.rs</p>
+                </div>
+                <div class="footer-back">
+                    <a href="index.html#tretmani" class="footer-back-btn">
+                        <i class="fas fa-arrow-left"></i>
+                        Povratak na tretmane
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ordinacija West. Sva prava zadržana.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/381606007088?text=Dobar%20dan%21%20Interesuje%20me%20lipoliza%20tretman.%20Možete%20li%20mi%20reći%20više%20informacija%3F" 
+       target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+        <span>Zakaži lipoliza tretman</span>
+    </a>
+
+    <script>
+        // Smooth scroll for back button
+        document.querySelector('.back-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.location.href = this.href;
+        });
+    </script>
+</body>
+</html>

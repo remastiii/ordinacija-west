@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="sr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="7 Point Usne | Ordinacija West Dr Tamara Vesović. Napredna tehnika za savršeno oblikovanje usana sa 7 precizno definisanih tačaka aplikacije.">
+    <meta name="keywords" content="7 point usne Požega, oblikovanje usana, hijaluronski fileri, uvećanje usana, Dr Tamara Vesović, ordinacija west">
+    <meta name="author" content="Dr Tamara Vesović - Ordinacija West">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#2c5aa0">
+    
+    <title>7 Point Usne | Ordinacija West Požega</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        :root {
+            --primary-color: #2c5aa0;
+            --secondary-color: #4a7bc8;
+            --accent-color: #f8f9fa;
+            --text-primary: #2c3e50;
+            --text-secondary: #6c7b7f;
+            --border-color: #e0e6ed;
+            --shadow-light: 0 2px 10px rgba(44, 90, 160, 0.1);
+            --shadow-medium: 0 4px 20px rgba(44, 90, 160, 0.15);
+        }
+        
+        .treatment-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .treatment-header {
+            text-align: center;
+            padding: 100px 0 60px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            margin-top: 80px;
+            position: relative;
+        }
+        
+        .treatment-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+        }
+        
+        .treatment-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+            color: white;
+        }
+        
+        .content-section {
+            padding: 60px 0;
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+            margin-bottom: 60px;
+        }
+        
+        .content-card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: var(--shadow-medium);
+            border-left: 5px solid var(--primary-color);
+        }
+        
+        .content-card h3 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .content-card p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+        
+        .content-card ul {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+        
+        .content-card li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            color: var(--text-primary);
+        }
+        
+        .points-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        
+        .point-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 25px;
+            background: linear-gradient(135deg, var(--accent-color), white);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .point-item:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+        }
+        
+        .point-number {
+            width: 45px;
+            height: 45px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        
+        .point-content h4 {
+            color: var(--primary-color);
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .point-content p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin: 0;
+        }
+        
+        .process-timeline {
+            background: var(--accent-color);
+            padding: 60px 0;
+            margin: 60px 0;
+        }
+        
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .process-step {
+            text-align: center;
+            padding: 30px 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: var(--shadow-light);
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 20px;
+        }
+        
+        .step-title {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .step-description {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        
+        .treatment-footer {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 60px 0 40px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 40px;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        
+        .footer-contact h4 {
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        
+        .footer-contact p {
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+        
+        .footer-contact i {
+            margin-right: 10px;
+            width: 20px;            color: white;        }
+        
+        .footer-back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 30px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+        }
+        
+        .footer-back-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+            color: white;
+        }
+        
+        .footer-back-btn i {
+            margin-right: 8px;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding-top: 20px;
+            text-align: center;
+            color: white;
+            font-weight: 500;
+        }
+        
+        .footer-bottom p {
+            color: white;
+            margin: 0;
+        }
+        
+        .back-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            color: var(--primary-color);
+            padding: 12px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: var(--shadow-medium);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(44, 90, 160, 0.1);
+        }
+        
+        .back-btn:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .back-btn i {
+            margin-right: 8px;
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+        
+        .whatsapp-float:hover {
+            background-color: #22c55e;
+            transform: scale(1.1);
+            color: white;
+        }
+        
+        .whatsapp-float span {
+            position: absolute;
+            right: 70px;
+            background: #333;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 14px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .whatsapp-float:hover span {
+            opacity: 1;
+            visibility: visible;
+            right: 75px;
+        }
+        
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .points-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .process-steps {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 20px;
+            }
+            
+            .treatment-title {
+                font-size: 2.5rem;
+            }
+            
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+            }
+            
+            .whatsapp-float span {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Back Button -->
+    <a href="index.html#tretmani" class="back-btn">
+        <i class="fas fa-arrow-left"></i>
+        Nazad na tretmane
+    </a>
+
+    <!-- Treatment Header -->
+    <div class="treatment-header">
+        <div class="treatment-container">
+            <h1 class="treatment-title">7 Point Usne</h1>
+            <p class="treatment-subtitle">
+                Napredna tehnika za savršeno oblikovanje usana sa 7 precizno definisanih tačaka aplikacije
+            </p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content-section">
+        <div class="treatment-container">
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>Šta je 7 Point tehnika?</h3>
+                    <p>7 Point tehnika predstavlja napredniju metodu za oblikovanje usana koja koristi sedam precizno definisanih anatomskih tačaka. Ova tehnika omogućava prirodno povećanje volumena uz savršeno oblikovanje kontura usana.</p>
+                    
+                    <p>Za razliku od tradicionalnih metoda, 7 Point tehnika:</p>
+                    <ul>
+                        <li>Koristi anatomske orijentire za prirodan izgled</li>
+                        <li>Postiže simetriju kroz preciznu aplikaciju</li>
+                        <li>Omogućava gradualno povećanje volumena</li>
+                        <li>Očuvava prirodnu mobilnost usana</li>
+                    </ul>
+                </div>
+                
+                <div class="content-card">
+                    <h3>Prednosti tehnike</h3>
+                    <p>Napredna 7 Point tehnika pruža brojne prednosti u odnosu na klasične metode tretiranja usana:</p>
+                    
+                    <ul>
+                        <li><strong>Prirodan rezultat</strong> - Poštuje anatomiju usana</li>
+                        <li><strong>Dugotrajnost</strong> - Optimalna distribucija filera</li>
+                        <li><strong>Simetrija</strong> - Precizno balansiranje obe usne</li>
+                        <li><strong>Minimal trauma</strong> - Manje bola i otoka</li>
+                        <li><strong>Brža regeneracija</strong> - Kraći period oporavka</li>
+                    </ul>
+                    
+                    <p>Ova tehnika je posebno pogodna za osobe koje žele diskretno poboljšanje ili korekciju asimetrije usana.</p>
+                </div>
+            </div>
+
+            <!-- 7 Points Explanation -->
+            <h2 style="text-align: center; color: var(--primary-color); margin: 60px 0 40px; font-family: 'Montserrat', sans-serif;">7 Anatomskih tačaka</h2>
+            <div class="points-grid">
+                <div class="point-item">
+                    <div class="point-number">1</div>
+                    <div class="point-content">
+                        <h4>Cupidov luk</h4>
+                        <p>Definisanje karakterističnog oblika gornje usne za prirodan i atraktivan izgled</p>
+                    </div>
+                </div>
+                
+                <div class="point-item">
+                    <div class="point-number">2</div>
+                    <div class="point-content">
+                        <h4>Lateralne komisure</h4>
+                        <p>Oblikovanje uglova usana za podizanje i mladolik izraz lica</p>
+                    </div>
+                </div>
+                
+                <div class="point-item">
+                    <div class="point-number">3</div>
+                    <div class="point-content">
+                        <h4>Philtral kolumne</h4>
+                        <p>Naglašavanje prirodnih vertikalnih linija za definisan izgled gornje usne</p>
+                    </div>
+                </div>
+                
+                <div class="point-item">
+                    <div class="point-number">4</div>
+                    <div class="point-content">
+                        <h4>Gornja usna - volumen</h4>
+                        <p>Dodavanje volumena za srazmerni odnos između gornje i donje usne</p>
+                    </div>
+                </div>
+                
+                <div class="point-item">
+                    <div class="point-number">5</div>
+                    <div class="point-content">
+                        <h4>Donja usna - volumen</h4>
+                        <p>Povećanje punoće donje usne uz očuvanje prirodnih proporcija</p>
+                    </div>
+                </div>
+                
+                <div class="point-item">
+                    <div class="point-number">6</div>
+                    <div class="point-content">
+                        <h4>Mentolabijalna brazda</h4>
+                        <p>Definisanje prelaza između donje usne i brade za harmoničan profil</p>
+                    </div>
+                </div>
+                
+                <div class="point-item">
+                    <div class="point-number">7</div>
+                    <div class="point-content">
+                        <h4>Oralna komisura</h4>
+                        <p>Finalno oblikovanje spojeva usana za savršenu harmoniju</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Process Timeline -->
+    <div class="process-timeline">
+        <div class="treatment-container">
+            <h2 style="text-align: center; color: var(--primary-color); margin-bottom: 50px; font-family: 'Montserrat', sans-serif;">Tok tretmana</h2>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h4 class="step-title">Analiza</h4>
+                    <p class="step-description">Detaljno mapiranje lica i označavanje 7 anatomskih tačaka za optimalan rezultat</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h4 class="step-title">Plan</h4>
+                    <p class="step-description">Kreiranje individualizovanog plana tretmana prema vašim željama i anatomiji</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h4 class="step-title">Aplikacija</h4>
+                    <p class="step-description">Precizna aplikacija filera u 7 tačaka uz korišćenje naprednih tehnika</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h4 class="step-title">Rezultat</h4>
+                    <p class="step-description">Trenutno uočljiv rezultat sa prirodnim izgledom koji se poboljšava narednih dana</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Content -->
+    <div class="content-section">
+        <div class="treatment-container">
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>Oporavak i nega</h3>
+                    <p>Oporavak nakon 7 Point tretmana je relativno brz zahvaljujući preciznosti tehnike:</p>
+                    
+                    <ul>
+                        <li><strong>Odmah:</strong> Vidljiv rezultat, minimalan otok</li>
+                        <li><strong>24h:</strong> Smanjenje početnog otoka</li>
+                        <li><strong>3-5 dana:</strong> Uspostavljanje finalnog oblika</li>
+                        <li><strong>2 nedelje:</strong> Potpuni oporavak</li>
+                    </ul>
+                    
+                    <p><strong>Instrukcije za negu:</strong></p>
+                    <ul>
+                        <li>Izbegavajte vrele napitke prva 24h</li>
+                        <li>Nežno čišćenje bez pritiska</li>
+                        <li>Hidratirajte balzamom za usne</li>
+                        <li>Izbegavajte intenzivnu fizičku aktivnost 24h</li>
+                    </ul>
+                </div>
+                
+                <div class="content-card">
+                    <h3>Rezultati i trajanje</h3>
+                    <p>7 Point tehnika omogućava postizanje prirodnog, harmoničnog izgleda usana koji traje 12-18 meseci.</p>
+                    
+                    <p><strong>Očekivani rezultati:</strong></p>
+                    <ul>
+                        <li>Povećan volumen u skladu sa anatomijom</li>
+                        <li>Poboljšana definicija kontura</li>
+                        <li>Simetrične i proporcionalne usne</li>
+                        <li>Prirodan izgled i pokretljivost</li>
+                        <li>Mladolik i svež izraz lica</li>
+                    </ul>
+                    
+                    <p>Održavajući tretman se preporučuje nakon 12-15 meseci za dugotrajan efekat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="treatment-footer">
+        <div class="treatment-container">
+            <div class="footer-content">
+                <div class="footer-contact">
+                    <h4>Kontakt</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Vojvode Mišića 50, Požega</p>
+                    <p><i class="fas fa-phone"></i> 060 600 7088</p>
+                    <p><i class="fas fa-envelope"></i> info@ordinacija-west.rs</p>
+                </div>
+                <div class="footer-back">
+                    <a href="index.html#tretmani" class="footer-back-btn">
+                        <i class="fas fa-arrow-left"></i>
+                        Povratak na tretmane
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ordinacija West. Sva prava zadržana.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/381606007088?text=Dobar%20dan%21%20Interesuje%20me%207%20Point%20tehnika%20za%20usne.%20Možete%20li%20mi%20reći%20više%20informacija%3F" 
+       target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+        <span>Zakaži 7 Point tretman</span>
+    </a>
+
+    <script>
+        // Smooth scroll for back button
+        document.querySelector('.back-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.location.href = this.href;
+        });
+    </script>
+</body>
+</html>

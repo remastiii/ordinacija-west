@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="sr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Skin Booster PRX T33 | Ordinacija West Dr Tamara Vesović. Revolucionarni hemijski piling za obnovu kože bez ljušenja, idealnu teksturu i mladoliko svetlo lice.">
+    <meta name="keywords" content="PRX T33 Požega, skin booster, hemijski piling, obnova kože, Dr Tamara Vesović, ordinacija west">
+    <meta name="author" content="Dr Tamara Vesović - Ordinacija West">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#2c5aa0">
+    
+    <title>Skin Booster PRX T33 | Ordinacija West Požega</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        :root {
+            --primary-color: #2c5aa0;
+            --secondary-color: #4a7bc8;
+            --accent-color: #f8f9fa;
+            --text-primary: #2c3e50;
+            --text-secondary: #6c7b7f;
+            --border-color: #e0e6ed;
+            --shadow-light: 0 2px 10px rgba(44, 90, 160, 0.1);
+            --shadow-medium: 0 4px 20px rgba(44, 90, 160, 0.15);
+        }
+        
+        .treatment-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .treatment-header {
+            text-align: center;
+            padding: 100px 0 60px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            margin-top: 80px;
+            position: relative;
+        }
+        
+        .treatment-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+        }
+        
+        .treatment-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+            color: white;
+        }
+        
+        .content-section {
+            padding: 60px 0;
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+            margin-bottom: 60px;
+        }
+        
+        .content-card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: var(--shadow-medium);
+            border-left: 5px solid var(--primary-color);
+        }
+        
+        .content-card h3 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .content-card p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+        
+        .content-card ul {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+        
+        .content-card li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            color: var(--text-primary);
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 25px;
+            background: var(--accent-color);
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+        
+        .benefit-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .benefit-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+        
+        .benefit-content h4 {
+            color: var(--primary-color);
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .benefit-content p {
+            color: white;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin: 0;
+        }
+        
+        .ingredients-section {
+            background: linear-gradient(135deg, #f8f9fa, #ffffff);
+            padding: 60px 0;
+            margin: 60px 0;
+        }
+        
+        .ingredients-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        
+        .ingredient-item {
+            text-align: center;
+            padding: 30px 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: var(--shadow-light);
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .ingredient-item:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+        
+        .ingredient-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin: 0 auto 20px;
+        }
+        
+        .ingredient-title {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .ingredient-description {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        
+        .process-timeline {
+            background: var(--accent-color);
+            padding: 60px 0;
+            margin: 60px 0;
+        }
+        
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .process-step {
+            text-align: center;
+            padding: 30px 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: var(--shadow-light);
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 20px;
+        }
+        
+        .step-title {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .step-description {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        
+        .treatment-footer {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 60px 0 40px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 40px;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        
+        .footer-contact h4 {
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        
+        .footer-contact p {
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+        
+        .footer-contact i {
+            margin-right: 10px;
+            width: 20px;            color: white;        }
+        
+        .footer-back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 30px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+        }
+        
+        .footer-back-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+            color: white;
+        }
+        
+        .footer-back-btn i {
+            margin-right: 8px;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding-top: 20px;
+            text-align: center;
+            color: white;
+            font-weight: 500;
+        }
+        
+        .footer-bottom p {
+            color: white;
+            margin: 0;
+        }
+        
+        .back-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            color: var(--primary-color);
+            padding: 12px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: var(--shadow-medium);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(44, 90, 160, 0.1);
+        }
+        
+        .back-btn:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .back-btn i {
+            margin-right: 8px;
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+        
+        .whatsapp-float:hover {
+            background-color: #22c55e;
+            transform: scale(1.1);
+            color: white;
+        }
+        
+        .whatsapp-float span {
+            position: absolute;
+            right: 70px;
+            background: #333;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 14px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .whatsapp-float:hover span {
+            opacity: 1;
+            visibility: visible;
+            right: 75px;
+        }
+        
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .ingredients-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .process-steps {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 20px;
+            }
+            
+            .treatment-title {
+                font-size: 2.5rem;
+            }
+            
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+            }
+            
+            .whatsapp-float span {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Back Button -->
+    <a href="index.html#tretmani" class="back-btn">
+        <i class="fas fa-arrow-left"></i>
+        Nazad na tretmane
+    </a>
+
+    <!-- Treatment Header -->
+    <div class="treatment-header">
+        <div class="treatment-container">
+            <h1 class="treatment-title">Skin Booster PRX T33</h1>
+            <p class="treatment-subtitle">
+                Revolucionarni hemijski piling za obnovu kože bez ljušenja, idealnu teksturu i mladoliko svetlo lice
+            </p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content-section">
+        <div class="treatment-container">
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>Šta je PRX T33?</h3>
+                    <p>PRX T33 predstavlja revoluciju u estetskoj medicini - hemijski piling koji obnavlja kožu bez ljušćenja. Ova inovativna formula kombinuje trihloroacetatnu kiselinu (TCA) sa vodonik-peroksidom i kojową kiselinom, omogućavajući duboku biorevitalizaciju bez typičnih neželjenih efekata.</p>
+                    
+                    <p>Prednosti PRX T33:</p>
+                    <ul>
+                        <li>Nema ljušćenja ili površinskog oštećenja</li>
+                        <li>Stimuliše sintezu kolagena u dermisu</li>
+                        <li>Trenutno vidljiva hidracija i sjaj</li>
+                        <li>Minimalno vreme oporavka</li>
+                        <li>Pogodan za sve tipove kože</li>
+                    </ul>
+                </div>
+                
+                <div class="content-card">
+                    <h3>Kako deluje tretman?</h3>
+                    <p>PRX T33 deluje putem naprednog biometaboličkog procesa koji stimuliše obnovu kože na ćelijskom nivou, bez narušavanja površinskog sloja kože.</p>
+                    
+                    <p>Mehanizam delovanja:</p>
+                    <ul>
+                        <li><strong>Biorevitalizacija</strong> - Stimulacija fibroblasta</li>
+                        <li><strong>Neo-kolageneza</strong> - Nova sinteza kolagena</li>
+                        <li><strong>Hidracija</strong> - Povećana sposobnost vezivanja vlage</li>
+                        <li><strong>Antioksidantno delovanje</strong> - Zaštita od slobodnih radikala</li>
+                    </ul>
+                    
+                    <p>Rezultat je zategnuta, hidrirana koža sa poboljšanim tonom i teksturom.</p>
+                </div>
+            </div>
+
+            <!-- Benefits Section -->
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h4>Trenutni efekat</h4>
+                        <p>Vidljivo poboljšanje hidratacije i sjaja odmah nakon tretmana</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h4>Prirodna obnova</h4>
+                        <p>Stimuliše prirodne procese regeneracije bez agresivnog delovanja</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h4>Bez prestanka rada</h4>
+                        <p>Tretman ne zahteva odsutnost s posla ili društvenih aktivnosti</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h4>Fleksibilno vreme</h4>
+                        <p>Moguće je u bilo kom periodu godine, bez obzira na sunčevo zračenje</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ingredients Section -->
+    <div class="ingredients-section">
+        <div class="treatment-container">
+            <h2 style="text-align: center; color: var(--primary-color); margin-bottom: 50px; font-family: 'Montserrat', sans-serif;">Aktivni sastojci</h2>
+            <div class="ingredients-grid">
+                <div class="ingredient-item">
+                    <div class="ingredient-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h4 class="ingredient-title">TCA 33%</h4>
+                    <p class="ingredient-description">Trihloroacetatna kiselina za stimulaciju kolagene sinteze u dermisu</p>
+                </div>
+                
+                <div class="ingredient-item">
+                    <div class="ingredient-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h4 class="ingredient-title">H₂O₂</h4>
+                    <p class="ingredient-description">Vodonik-peroksid za kontrolisanu oksidaciju i obnovu ćelija</p>
+                </div>
+                
+                <div class="ingredient-item">
+                    <div class="ingredient-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h4 class="ingredient-title">Kojića kiselina</h4>
+                    <p class="ingredient-description">Prirodni depigmentator za svetliju i ujednačeniju kožu</p>
+                </div>
+                
+                <div class="ingredient-item">
+                    <div class="ingredient-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4 class="ingredient-title">Antioksidansi</h4>
+                    <p class="ingredient-description">Zaštita od slobodnih radikala i usporavanja starenja</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Process Timeline -->
+    <div class="process-timeline">
+        <div class="treatment-container">
+            <h2 style="text-align: center; color: var(--primary-color); margin-bottom: 50px; font-family: 'Montserrat', sans-serif;">Tok tretmana</h2>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h4 class="step-title">Analiza kože</h4>
+                    <p class="step-description">Detaljno procenjujem tip i stanje vaše kože za optimalan protokol</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h4 class="step-title">Čišćenje</h4>
+                    <p class="step-description">Temeljno čišćenje kože i uklanjanje svih nečistoća</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h4 class="step-title">Aplikacija PRX T33</h4>
+                    <p class="step-description">Precizna aplikacija hemijskog pilinga po slojevima</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h4 class="step-title">Neutralizacija</h4>
+                    <p class="step-description">Kontrolisana neutralizacija i aplikacija regenerativnog krema</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Content -->
+    <div class="content-section">
+        <div class="treatment-container">
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3>Oporavak i nega</h3>
+                    <p>Jedna od glavnih prednosti PRX T33 je minimalno vreme oporavka. Većina pacijenata može da nastavi sa uobičajenim aktivnostima odmah nakon tretmana.</p>
+                    
+                    <p><strong>Timeline oporavka:</strong></p>
+                    <ul>
+                        <li><strong>Odmah:</strong> Osećaj zatezanja, blago crvenilo</li>
+                        <li><strong>2-4h:</strong> Smanjenje crvenila</li>
+                        <li><strong>24h:</strong> Koža postaje mekša</li>
+                        <li><strong>3-7 dana:</strong> Povećan sjaj i hidracija</li>
+                    </ul>
+                    
+                    <p><strong>Instrukcije za negu:</strong></p>
+                    <ul>
+                        <li>Koristite blag hidratantni krem</li>
+                        <li>Obavezna SPF zaštita</li>
+                        <li>Izbegavajte ribanje ili masažu</li>
+                        <li>Ne koristite aktivne sastojke 48h</li>
+                    </ul>
+                </div>
+                
+                <div class="content-card">
+                    <h3>Rezultati i plan tretmana</h3>
+                    <p>PRX T33 se preporučuje u ciklusu od 4-6 tretmana u razmaku od 7-14 dana za optimalne rezultate.</p>
+                    
+                    <p><strong>Očekivani rezultati:</strong></p>
+                    <ul>
+                        <li>Povećana hidracija i sjaj kože</li>
+                        <li>Poboljšana tekstura i elastičnost</li>
+                        <li>Smanjenje finih linija</li>
+                        <li>Ujednačen ton kože</li>
+                        <li>Zategnuti i mladolik izgled</li>
+                    </ul>
+                    
+                    <p>Rezultati se poboljšavaju sa svakim tretmanom, a optimalan efekat se postiže nakon kompletnog ciklusa.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="treatment-footer">
+        <div class="treatment-container">
+            <div class="footer-content">
+                <div class="footer-contact">
+                    <h4>Kontakt</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Vojvode Mišića 50, Požega</p>
+                    <p><i class="fas fa-phone"></i> 060 600 7088</p>
+                    <p><i class="fas fa-envelope"></i> info@ordinacija-west.rs</p>
+                </div>
+                <div class="footer-back">
+                    <a href="index.html#tretmani" class="footer-back-btn">
+                        <i class="fas fa-arrow-left"></i>
+                        Povratak na tretmane
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ordinacija West. Sva prava zadržana.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/381606007088?text=Dobar%20dan%21%20Interesuje%20me%20PRX%20T33%20tretman.%20Možete%20li%20mi%20reći%20više%20informacija%3F" 
+       target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+        <span>Zakaži PRX T33 tretman</span>
+    </a>
+
+    <script>
+        // Smooth scroll for back button
+        document.querySelector('.back-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.location.href = this.href;
+        });
+    </script>
+</body>
+</html>
