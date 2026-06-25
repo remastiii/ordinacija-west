@@ -1979,6 +1979,15 @@ p {
     margin: 0;
 }
 
+.site-version {
+    display: inline-block;
+    margin-left: 12px;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.3);
+    letter-spacing: 0.05em;
+    vertical-align: middle;
+}
+
 .footer-legal {
     display: flex;
     gap: var(--spacing-lg);
